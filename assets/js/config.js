@@ -47,8 +47,7 @@ const siteConfig = {
   // Business Info
   established: 2010,
   cuisine: "Mediterranean",
-  priceRange: "$$$$",
-  michelin: true
+  priceRange: "$$$$"
 };
 
 // Log config loaded (for debugging)
