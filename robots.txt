@@ -1,16 +1,11 @@
 # MoonLight Restaurant - robots.txt
-# Allow all bots to crawl the site
+# DISALLOW all crawlers until official launch after contract is signed
+# Website is currently under development with placeholder content
 
 User-agent: *
-Allow: /
+Disallow: /
 
-# Disallow admin and private folders if they exist
-Disallow: /admin/
-Disallow: /private/
-Disallow: /temp/
+# Sitemap location (will be active after launch)
+# Sitemap: https://vericavje8-rgb.github.io/MoonLIght/sitemap.xml
 
-# Sitemap location
-Sitemap: https://vericavje8-rgb.github.io/MoonLIght/sitemap.xml
-
-# Crawl delay (optional - in seconds)
-Crawl-delay: 1
+# Note: Change to "Allow: /" after official launch date
