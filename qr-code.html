@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonLIght - QR Code Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        :root {
+            --primary: #2d1810;
+            --secondary: #8b6f47;
+            --accent: #d4a574;
+            --light-bg: #faf7f2;
+            --text-dark: #2d1810;
+            --text-light: #6b5c4a;
+            --white: #ffffff;
+            --gold: #c9a961;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Montserrat', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            background: var(--light-bg);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-family: var(--font-serif);
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .qr-wrapper {
+            background: linear-gradient(135deg, rgba(201, 169, 97, 0.1) 0%, rgba(212, 165, 116, 0.1) 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid var(--gold);
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+
+        #qrcode {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .qr-info {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .qr-info h3 {
+            font-family: var(--font-serif);
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .qr-info p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background: var(--gold);
+            color: var(--primary);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        button:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(201, 169, 97, 0.3);
+        }
+
+        .instructions {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--gold);
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .instructions h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .instructions ol {
+            margin-left: 1.5rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .instructions li {
+            margin-bottom: 0.5rem;
+        }
+
+        .url-display {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+            word-break: break-all;
+            font-size: 0.85rem;
+            color: var(--text-dark);
+            border: 1px solid #ddd;
+            font-family: monospace;
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            display: none;
+            border: 1px solid #c3e6cb;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .qr-wrapper {
+                padding: 1.5rem;
+                min-height: 250px;
+            }
+
+            button {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌙 MoonLIght</h1>
+        <p class="subtitle">Menu QR Code</p>
+
+        <div class="qr-info">
+            <h3>📱 Scan to View Menu</h3>
+            <p>Point your smartphone camera at the QR code below to instantly access our digital menu and make reservations.</p>
+        </div>
+
+        <div class="qr-wrapper">
+            <div id="qrcode"></div>
+        </div>
+
+        <div class="button-group">
+            <button onclick="downloadQRCode()">📥 Download QR Code</button>
+            <button onclick="printQRCode()">🖨️ Print QR Code</button>
+            <button onclick="copyURL()">📋 Copy Menu Link</button>
+        </div>
+
+        <div class="success-message" id="successMessage">
+            ✓ Menu URL copied to clipboard!
+        </div>
+
+        <div class="url-display" id="urlDisplay"></div>
+
+        <div class="instructions">
+            <h4>How to Use This QR Code:</h4>
+            <ol>
+                <li>Print this page or save the QR code image</li>
+                <li>Place it on your restaurant tables, counter, or marketing materials</li>
+                <li>Customers scan with their phone camera or any QR reader app</li>
+                <li>They'll instantly see your complete menu and can make reservations</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        // Get the full URL of the menu page
+        const baseURL = window.location.origin;
+        const menuURL = baseURL + '/menu.html';
+
+        // Display the URL
+        document.getElementById('urlDisplay').textContent = menuURL;
+
+        // Generate QR Code
+        const qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: menuURL,
+            width: 256,
+            height: 256,
+            colorDark: "#2d1810",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        // Download QR Code
+        function downloadQRCode()

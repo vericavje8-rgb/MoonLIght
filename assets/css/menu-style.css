@@ -1,0 +1,523 @@
+/* ============ Menu Page Specific Styles ============ */
+
+.menu-hero {
+    background: linear-gradient(135deg, rgba(45, 24, 16, 0.95) 0%, rgba(139, 111, 71, 0.9) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 0;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-hero h1 {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.menu-hero p {
+    font-size: 1.3rem;
+    opacity: 0.95;
+}
+
+/* ============ Menu Intro ============ */
+.menu-intro {
+    background: var(--white);
+    padding: 3rem 0;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.menu-intro p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* ============ Menu Filters ============ */
+.menu-filters {
+    background: var(--white);
+    padding: 1.5rem 0;
+    margin: 0 0 2rem 0;
+    text-align: center;
+    position: sticky;
+    top: 70px;
+    z-index: 50;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+}
+
+.menu-filters .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-btn {
+    background: var(--light-bg);
+    color: var(--text-dark);
+    border: 2px solid transparent;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.filter-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.filter-btn.active {
+    background: var(--gold);
+    color: var(--primary);
+    border-color: var(--gold);
+}
+
+/* ============ Menu Content ============ */
+.menu-content {
+    background: var(--white);
+    padding: 4rem 0;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.menu-section {
+    margin-bottom: 4rem;
+    display: none;
+}
+
+.menu-section.active {
+    display: block;
+}
+
+.menu-section h2 {
+    font-family: var(--font-serif);
+    color: var(--primary);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--gold);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* ============ Menu Cards with Images ============ */
+.menu-card {
+    background: var(--light-bg);
+    border-radius: 12px;
+    border-left: 4px solid var(--gold);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(201, 169, 97, 0.2);
+    border-left-color: var(--accent);
+}
+
+.menu-card.featured {
+    border: 2px solid var(--gold);
+    border-left: 4px solid var(--gold);
+    background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(212, 165, 116, 0.05) 100%);
+}
+
+/* ============ Dish Image ============ */
+.dish-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.dish-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.menu-card:hover .dish-image img {
+    transform: scale(1.08);
+}
+
+.featured-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gold);
+    color: var(--primary);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* ============ Card Content ============ */
+.card-content {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.8rem;
+    gap: 1rem;
+}
+
+.menu-card h3 {
+    font-family: var(--font-serif);
+    color: var(--primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+    flex: 1;
+}
+
+.price {
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.tag {
+    display: inline-block;
+    background: rgba(139, 111, 71, 0.15);
+    color: var(--secondary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* ============ Beverage Sections ============ */
+.beverage-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+.beverage-section:last-child {
+    border-bottom: none;
+}
+
+.beverage-section h3 {
+    font-family: var(--font-serif);
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--gold);
+}
+
+.beverage-intro {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.wine-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.wine-item {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+}
+
+.wine-item h4 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.wine-item p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.cocktail-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.cocktail-item {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--gold);
+    transition: all 0.3s ease;
+}
+
+.cocktail-item:hover {
+    transform: translateX(5px);
+}
+
+.cocktail-item h4 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cocktail-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.beverage-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.beverage-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--light-bg);
+    padding: 1.2rem;
+    border-radius: 6px;
+    border-left: 4px solid var(--secondary);
+}
+
+.beverage-item .name {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.beverage-item .price {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+/* ============ Dietary Information ============ */
+.dietary-info {
+    background: linear-gradient(135deg, rgba(45, 24, 16, 0.05) 0%, rgba(139, 111, 71, 0.05) 100%);
+    padding: 4rem 0;
+    margin: 3rem 0;
+    border-radius: 8px;
+}
+
+.dietary-info h2 {
+    font-family: var(--font-serif);
+    color: var(--primary);
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dietary-info > .container > p {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dietary-legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.legend-item {
+    background: var(--white);
+    padding: 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.legend-tag {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* ============ Menu CTA ============ */
+.menu-cta {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 0;
+    margin: 3rem 0;
+    border-radius: 8px;
+}
+
+.menu-cta h2 {
+    font-family: var(--font-serif);
+    color: var(--gold);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.menu-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+/* ============ Responsive Design ============ */
+@media (max-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2rem;
+    }
+
+    .wine-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .menu-filters .container {
+        gap: 0.8rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .menu-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .dish-image {
+        height: 180px;
+    }
+
+    .dietary-legend {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-cta h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-hero {
+        padding: 3rem 0;
+        min-height: auto;
+    }
+
+    .menu-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .menu-hero p {
+        font-size: 1rem;
+    }
+
+    .menu-filters .container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .dish-image {
+        height: 160px;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .dietary-legend {
+        grid-template-columns: 1fr;
+    }
+
+    .tags {
+        gap: 0.3rem;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+    }
+
+    .featured-badge {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+}

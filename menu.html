@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - MoonLIght</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu-style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🌙 MoonLIght</h1>
+                <p class="tagline">Fine Dining Experience</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="menu2.html">Menu 2</a></li>
+                    <li><a href="index.html#ambiance">Ambiance</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#reservation" class="btn-nav">Reserve</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu-hero">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Curated with passion, prepared with perfection</p>
+        </div>
+    </section>
+
+    <section class="menu-intro">
+        <div class="container">
+            <p>Our chef sources the finest seasonal ingredients from local farms and sustainable suppliers. Each dish is carefully crafted to deliver an unforgettable culinary experience. We offer a diverse selection of appetizers, main courses, and desserts, complemented by our carefully curated wine list.</p>
+        </div>
+    </section>
+
+    <section class="menu-filters">
+        <div class="container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="hladna-predjela">Cold Appetizers</button>
+            <button class="filter-btn" data-filter="salate">Salads</button>
+            <button class="filter-btn" data-filter="juhe">Soups</button>
+            <button class="filter-btn" data-filter="njoki">Gnocchi</button>
+            <button class="filter-btn" data-filter="tjestenine">Pasta</button>
+            <button class="filter-btn" data-filter="rižoto">Risotto</button>
+            <button class="filter-btn" data-filter="mesna-jela">Meat Dishes</button>
+            <button class="filter-btn" data-filter="riblja-jela">Fish Dishes</button>
+            <button class="filter-btn" data-filter="prilozi">Sides</button>
+            <button class="filter-btn" data-filter="dodaci-supplementi">Extras</button>
+            <button class="filter-btn" data-filter="deserti">Desserts</button>
+            <button class="filter-btn" data-filter="pizza">Pizza</button>
+        </div>
+    </section>
+
+    <section class="menu-content">
+        <div class="container">
+            <!-- COLD APPETIZERS -->
+            <div class="menu-section" data-category="hladna-predjela">
+                <h2>Cold Appetizers - Hladna Predjela</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Pan-Seared Foie Gras">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Pan-Seared Foie Gras</h3>
+                                <span class="price">$32</span>
+                            </div>
+                            <p class="description">Seared duck liver with fig compote, toasted brioche, and aged balsamic reduction</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&h=400&fit=crop" alt="Oyster Selection">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Oyster Selection</h3>
+                                <span class="price">$26</span>
+                            </div>
+                            <p class="description">Fresh catch from local waters, served chilled with mignonette, cocktail sauce, and lemon</p>
+                            <div class="tags">
+                                <span class="tag">Seasonal</span>
+                                <span class="tag">Pescatarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=400&fit=crop" alt="Burrata & Heirloom Tomatoes">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Burrata & Heirloom Tomatoes</h3>
+                                <span class="price">$18</span>
+                            </div>
+                            <p class="description">Creamy burrata, seasonal heirloom tomatoes, basil oil, and aged balsamic vinegar</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=400&fit=crop" alt="Seared Scallops">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Seared Scallops</h3>
+                                <span class="price">$28</span>
+                            </div>
+                            <p class="description">Diver scallops with cauliflower purée, crispy pancetta, and brown butter sauce</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=500&h=400&fit=crop" alt="Truffle Mushroom Soup">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Truffle Mushroom Soup</h3>
+                                <span class="price">$16</span>
+                            </div>
+                            <p class="description">Creamy wild mushroom bisque with black truffle oil, crème fraîche, and microgreens</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1599599810694-4d5bcef822a5?w=500&h=400&fit=crop" alt="Charcuterie & Cheese Board">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Charcuterie & Cheese Board</h3>
+                                <span class="price">$34</span>
+                            </div>
+                            <p class="description">Selection of imported cured meats, artisanal cheeses, marinated olives, and fresh bread</p>
+                            <div class="tags">
+                                <span class="tag">Sharing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SALADS -->
+            <div class="menu-section" data-category="salate">
+                <h2>Salads - Salate</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=400&fit=crop" alt="Classic Caesar Salad">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Classic Caesar Salad</h3>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="description">Crisp romaine, house-made Caesar dressing, Parmigiano-Reggiano, and garlic croutons</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=400&fit=crop" alt="Grilled Chicken & Arugula">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Grilled Chicken & Arugula</h3>
+                                <span class="price">$19</span>
+                            </div>
+                            <p class="description">Herb-marinated grilled chicken, peppery arugula, shaved parmesan, and aged balsamic</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=400&fit=crop" alt="Beetroot & Goat Cheese">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Beetroot & Goat Cheese</h3>
+                                <span class="price">$16</span>
+                            </div>
+                            <p class="description">Roasted beets, creamy goat cheese, candied walnuts, and citrus vinaigrette</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Seared Ahi Tuna Salad">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Seared Ahi Tuna Salad</h3>
+                                <span class="price">$22</span>
+                            </div>
+                            <p class="description">Sesame-crusted ahi tuna, mixed greens, cucumber, avocado, and wasabi vinaigrette</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=400&fit=crop" alt="Warm Lentil Salad">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Warm Lentil Salad</h3>
+                                <span class="price">$13</span>
+                            </div>
+                            <p class="description">French lentils, roasted vegetables, feta cheese, and lemon herb dressing</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Vegan Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=400&fit=crop" alt="Spinach & Prosciutto Salad">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Spinach & Prosciutto Salad</h3>
+                                <span class="price">$17</span>
+                            </div>
+                            <p class="description">Baby spinach, crispy prosciutto, warm goat cheese crostini, and balsamic glaze</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MEAT DISHES -->
+            <div class="menu-section" data-category="mesna-jela">
+                <h2>Meat Dishes - Mesna Jela</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card featured">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Grilled Wagyu Ribeye">
+                            <span class="featured-badge">⭐ Featured</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Grilled Wagyu Ribeye</h3>
+                                <span class="price">$58</span>
+                            </div>
+                            <p class="description">16oz Prime Wagyu beef, perfectly marbled, served with truffle butter, roasted fingerling potatoes, and seasonal vegetables</p>
+                            <div class="tags">
+                                <span class="tag">Chef's Special</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Pan-Roasted Wild Salmon">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Pan-Roasted Wild Salmon</h3>
+                                <span class="price">$42</span>
+                            </div>
+                            <p class="description">Fresh wild-caught salmon with lemon dill sauce, charred asparagus, and saffron risotto</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=400&fit=crop" alt="Herb-Crusted Lamb Rack">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Herb-Crusted Lamb Rack</h3>
+                                <span class="price">$48</span>
+                            </div>
+                            <p class="description">Rosemary and thyme crusted lamb, served with red wine reduction, roasted root vegetables, and mint jus</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card featured">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=400&fit=crop" alt="Duck Confit">
+                            <span class="featured-badge">⭐ Featured</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Duck Confit</h3>
+                                <span class="price">$44</span>
+                            </div>
+                            <p class="description">Slow-cooked duck leg, tender and succulent, with cherry gastrique, turnip purée, and crispy skin</p>
+                            <div class="tags">
+                                <span class="tag">Chef's Special</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Veal Chop with Porcini">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Veal Chop with Porcini</h3>
+                                <span class="price">$46</span>
+                            </div>
+                            <p class="description">Grilled veal chop, porcini mushroom sauce, braised endive, and roasted polenta</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FISH DISHES -->
+            <div class="menu-section" data-category="riblja-jela">
+                <h2>Fish Dishes - Riblja Jela</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Pan-Roasted Wild Salmon">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Pan-Roasted Wild Salmon</h3>
+                                <span class="price">$42</span>
+                            </div>
+                            <p class="description">Fresh wild-caught salmon with lemon dill sauce, charred asparagus, and saffron risotto</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=400&fit=crop" alt="Lobster Tail Thermidor">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Lobster Tail Thermidor</h3>
+                                <span class="price">$52</span>
+                            </div>
+                            <p class="description">Fresh Maine lobster tail, creamy thermidor sauce, topped with breadcrumbs, served with drawn butter</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=400&fit=crop" alt="Branzino en Papillote">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Branzino en Papillote</h3>
+                                <span class="price">$38</span>
+                            </div>
+                            <p class="description">Whole Mediterranean sea bass, wrapped in parchment with vegetables, white wine, and fresh herbs</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDES -->
+            <div class="menu-section" data-category="prilozi">
+                <h2>Sides - Prilozi</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&h=400&fit=crop" alt="Truffle Mac & Cheese">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Truffle Mac & Cheese</h3>
+                                <span class="price">$12</span>
+                            </div>
+                            <p class="description">Creamy four-cheese sauce with black truffle oil and crispy breadcrumb topping</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=400&fit=crop" alt="Creamed Spinach">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Creamed Spinach</h3>
+                                <span class="price">$9</span>
+                            </div>
+                            <p class="description">Fresh spinach in a light cream sauce with nutmeg and garlic</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=400&fit=crop" alt="Charred Asparagus">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Charred Asparagus</h3>
+                                <span class="price">$10</span>
+                            </div>
+                            <p class="description">Fresh asparagus with hollandaise sauce and shaved parmesan</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1568103249341-ab0f0cdc0c45?w=500&h=400&fit=crop" alt="Loaded Baked Potato">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Loaded Baked Potato</h3>
+                                <span class="price">$11</span>
+                            </div>
+                            <p class="description">Idaho potato with butter, sour cream, bacon, chives, and cheddar</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1586080872651-b07b08c6a435?w=500&h=400&fit=crop" alt="Garlic Parmesan Fries">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Garlic Parmesan Fries</h3>
+                                <span class="price">$8</span>
+                            </div>
+                            <p class="description">Hand-cut fries tossed with garlic, fresh parmesan, and herbs</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Vegan Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1568103249341-ab0f0cdc0c45?w=500&h=400&fit=crop" alt="Lobster Mashed Potatoes">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Lobster Mashed Potatoes</h3>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="description">Silky mashed potatoes with fresh lobster, butter, and chives</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOUPS -->
+            <div class="menu-section" data-category="juhe">
+                <h2>Soups - Juhe</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=500&h=400&fit=crop" alt="Beef Soup">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Beef Soup - Goveđa Juha</h3>
+                                <span class="price">$8</span>
+                            </div>
+                            <p class="description">Rich beef broth with vegetables and tender meat pieces</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1640521542534-a24e9e9d6bcb?w=500&h=400&fit=crop" alt="Tomato Soup">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Tomato Soup - Juha od Rajčica</h3>
+                                <span class="price">$7</span>
+                            </div>
+                            <p class="description">Creamy tomato soup with fresh basil and crème fraîche</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=500&h=400&fit=crop" alt="Fish Soup">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Fish Soup - Riblja Juha</h3>
+                                <span class="price">$10</span>
+                            </div>
+                            <p class="description">Mediterranean fish broth with mixed seafood and seasonal vegetables</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GNOCCHI -->
+            <div class="menu-section" data-category="njoki">
+                <h2>Gnocchi - Njoki</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Beef Goulash with Gnocchi">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Beef Goulash with Gnocchi</h3>
+                                <span class="price">$16</span>
+                            </div>
+                            <p class="description">Tender beef goulash served over soft potato gnocchi</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=400&fit=crop" alt="Gnocchi with Shrimp">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Gnocchi with Shrimp</h3>
+                                <span class="price">$18</span>
+                            </div>
+                            <p class="description">Light gnocchi with succulent shrimp and garlic butter sauce</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PASTA -->
+            <div class="menu-section" data-category="tjestenine">
+                <h2>Pasta - Tjestenine</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1612874742237-6526221fcf2f?w=500&h=400&fit=crop" alt="Spaghetti Bolognese">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Spaghetti Bolognese</h3>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="description">Classic pasta with slow-simmered meat sauce and fresh parmesan</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&h=400&fit=crop" alt="Spaghetti Carbonara">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Spaghetti Carbonara</h3>
+                                <span class="price">$15</span>
+                            </div>
+                            <p class="description">Creamy sauce with crispy pancetta, egg yolk, and pecorino cheese</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1569535500825-5f5ea7e3f62f?w=500&h=400&fit=crop" alt="Tagliatelle with Truffles">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Tagliatelle with Truffles</h3>
+                                <span class="price">$22</span>
+                            </div>
+                            <p class="description">Wide ribbon pasta with black truffles and truffle cream sauce</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1579631514433-6ba5aae52c0f?w=500&h=400&fit=crop" alt="Tagliatelle with Shrimp">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Tagliatelle with Shrimp</h3>
+                                <span class="price">$19</span>
+                            </div>
+                            <p class="description">Fresh tagliatelle with succulent shrimp and light white wine sauce</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RISOTTO -->
+            <div class="menu-section" data-category="rižoto">
+                <h2>Risotto - Rižoto</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card featured">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1564621592063-f89bcbfc4d2f?w=500&h=400&fit=crop" alt="Risotto with Shrimp">
+                            <span class="featured-badge">⭐ Featured</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Risotto with Shrimp</h3>
+                                <span class="price">$18</span>
+                            </div>
+                            <p class="description">Creamy arborio rice with plump shrimp, saffron, and white wine</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1585096543790-c8731cb971d7?w=500&h=400&fit=crop" alt="Seafood Risotto">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Seafood Risotto</h3>
+                                <span class="price">$20</span>
+                            </div>
+                            <p class="description">Mixed seafood risotto with mussels, clams, and fresh herbs</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Risotto with Squid">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Risotto with Squid - Rižoto sa Sipama</h3>
+                                <span class="price">$17</span>
+                            </div>
+                            <p class="description">Black squid risotto with tender squid pieces and garlic</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1548521053-a51066c8efbe?w=500&h=400&fit=crop" alt="Vegetarian Risotto">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Vegetarian Risotto</h3>
+                                <span class="price">$13</span>
+                            </div>
+                            <p class="description">Creamy risotto with seasonal vegetables and fresh herbs</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Vegan Option</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1604103442097-8b74394b95c6?w=500&h=400&fit=crop" alt="Chicken Risotto">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Risotto with Chicken</h3>
+                                <span class="price">$15</span>
+                            </div>
+                            <p class="description">Tender chicken and vegetables in creamy saffron risotto</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PIZZA -->
+            <div class="menu-section" data-category="pizza">
+                <h2>Pizza</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=500&h=400&fit=crop" alt="Margherita Pizza">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Margherita</h3>
+                                <span class="price">$12</span>
+                            </div>
+                            <p class="description">Fresh tomato sauce, mozzarella, and basil</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1571995741235-17a62a0e73bd?w=500&h=400&fit=crop" alt="Quattro Formaggi Pizza">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Quattro Formaggi</h3>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="description">Four cheese blend: mozzarella, gorgonzola, and fresh ricotta</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card featured">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1604382206551-f8e5f9dbd3d7?w=500&h=400&fit=crop" alt="Pizza Luna">
+                            <span class="featured-badge">⭐ Featured</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Pizza Luna (House Special)</h3>
+                                <span class="price">$18</span>
+                            </div>
+                            <p class="description">Fresh seafood, garlic, and fresh herbs on our signature crust</p>
+                            <div class="tags">
+                                <span class="tag">Pescatarian</span>
+                                <span class="tag">Chef's Special</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1595521624651-6e7e6aebc59f?w=500&h=400&fit=crop" alt="Pizza Capricciosa">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Capricciosa</h3>
+                                <span class="price">$15</span>
+                            </div>
+                            <p class="description">Ham, mushrooms, artichokes, and black olives</p>
+                            <div class="tags">
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1614707267537-b85faf00021a?w=500&h=400&fit=crop" alt="Pizza Diavola">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Diavola (Spicy)</h3>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="description">Spicy salami, pepperoni, and red chili flakes</p>
+                            <div class="tags">
+                                <span class="tag">Spicy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXTRAS -->
+            <div class="menu-section" data-category="dodaci-supplementi">
+                <h2>Extras - Dodaci / Supplementi</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=500&h=400&fit=crop" alt="Focaccia Bread">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Focaccia Bread</h3>
+                                <span class="price">$5</span>
+                            </div>
+                            <p class="description">Italian flatbread with olive oil and rosemary</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=400&fit=crop" alt="Lepinja Bread">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Lepinja Bread</h3>
+                                <span class="price">$4</span>
+                            </div>
+                            <p class="description">Traditional Balkan soft bread</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=400&fit=crop" alt="Condiments">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>House Condiments</h3>
+                                <span class="price">$3</span>
+                            </div>
+                            <p class="description">Mayonnaise, ketchup, mustard, and ajvar</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESSERTS -->
+            <div class="menu-section" data-category="deserti">
+                <h2>Desserts - Deserti</h2>
+                
+                <div class="menu-grid">
+                    <div class="menu-card featured">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=400&fit=crop" alt="Chocolate Soufflé">
+                            <span class="featured-badge">⭐ Featured</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Chocolate Soufflé</h3>
+                                <span class="price">$16</span>
+                            </div>
+                            <p class="description">Dark chocolate soufflé with molten center, served with vanilla bean ice cream and fresh berries</p>
+                            <div class="tags">
+                                <span class="tag">Chef's Special</span>
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1476080284051-f559b2424185?w=500&h=400&fit=crop" alt="Crème Brûlée">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Crème Brûlée</h3>
+                                <span class="price">$13</span>
+                            </div>
+                            <p class="description">Classic French custard with caramelized sugar crust, served with shortbread cookie</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Gluten-Free Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1535253888007-90cfcc1c0e7e?w=500&h=400&fit=crop" alt="Seasonal Fruit Tart">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Seasonal Fruit Tart</h3>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="description">Fresh seasonal fruits with pastry cream and puff pastry, topped with edible flowers</p>
+                            <div class="tags">
+                                <span class="tag">Seasonal</span>
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1571115564519-c90acad46330?w=500&h=400&fit=crop" alt="Tiramisu">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Tiramisu</h3>
+                                <span class="price">$12</span>
+                            </div>
+                            <p class="description">Traditional Italian dessert with espresso, mascarpone, and cocoa powder</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card featured">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&h=400&fit=crop" alt="Lemon Panna Cotta">
+                            <span class="featured-badge">⭐ Featured</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Lemon Panna Cotta</h3>
+                                <span class="price">$13</span>
+                            </div>
+                            <p class="description">Silky lemon-infused panna cotta with candied lemon zest and berry compote</p>
+                            <div class="tags">
+                                <span class="tag">Chef's Special</span>
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=400&fit=crop" alt="Chocolate Lava Cake">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Chocolate Lava Cake</h3>
+                                <span class="price">$15</span>
+                            </div>
+                            <p class="description">Warm dark chocolate cake with gooey center, whipped cream, and raspberry coulis</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1551632440-6fab8b22b0c6?w=500&h=400&fit=crop" alt="Vanilla Panna Cotta">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Vanilla Panna Cotta</h3>
+                                <span class="price">$12</span>
+                            </div>
+                            <p class="description">Classic vanilla panna cotta with fresh berries and mint</p>
+                            <div class="tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1570080321447-03e573e1ce66?w=500&h=400&fit=crop" alt="Dessert Trio">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Dessert Trio</h3>
+                                <span class="price">$18</span>
+                            </div>
+                            <p class="description">A selection of three desserts: chocolate, fruit, and cream-based specialties</p>
+                            <div class="tags">
+                                <span class="tag">Sharing</span>
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BEVERAGES -->
+            <div class="menu-section" data-category="beverages">
+                <h2>Beverages</h2>
+                
+                <div class="beverage-section">
+                    <h3>Wine Selection</h3>
+                    <p class="beverage-intro">Our sommelier has carefully selected wines from around the world to complement our menu.</p>
+                    
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <h4>Red Wines</h4>
+                            <p><strong>Bordeaux Selection:</strong> Bottles starting from $45 | Glass $12</p>
+                            <p><strong>Italian Barolo:</strong> Bottles starting from $52 | Glass $14</p>
+                            <p><strong>California Cabernet:</strong> Bottles starting from $48 | Glass $13</p>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <h4>White Wines</h4>
+                            <p><strong>Burgundy Chardonnay:</strong> Bottles starting from $42 | Glass $11</p>
+                            <p><strong>Sauvignon Blanc:</strong> Bottles starting from $38 | Glass $10</p>
+                            <p><strong>Albariño:</strong> Bottles starting from $35 | Glass $9</p>
+                        </div>
+
+                        <div class="wine-item">
+                            <h4>Champagne & Sparkling</h4>
+                            <p><strong>Champagne Dom Pérignon:</strong> Bottle $180</p>
+                            <p><strong>Prosecco:</strong> Bottle $35 | Glass $9</p>
+                            <p><strong>Cava:</strong> Bottle $32 | Glass $8</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beverage-section">
+                    <h3>Signature Cocktails</h3>
+                    
+                    <div class="cocktail-list">
+                        <div class="cocktail-item">
+                            <div class="item-header">
+                                <h4>Gourmet Martini</h4>
+                                <span class="price">$14</span>
+                            </div>
+                            <p>Premium vodka or gin, dry vermouth, artisanal olive garnish</p>
+                        </div>
+
+                        <div class="cocktail-item">
+                            <div class="item-header">
+                                <h4>French 75</h4>
+                                <span class="price">$15</span>
+                            </div>
+                            <p>Gin, fresh lemon juice, champagne, sugar cube</p>
+                        </div>
+
+                        <div class="cocktail-item">
+                            <div class="item-header">
+                                <h4>Truffle Old Fashioned</h4>
+                                <span class="price">$16</span>
+                            </div>
+                            <p>Premium whiskey, truffle syrup, bitters, fresh orange</p>
+                        </div>
+
+                        <div class="cocktail-item">
+                            <div class="item-header">
+                                <h4>Lavender Sazerac</h4>
+                                <span class="price">$15</span>
+                            </div>
+                            <p>Rye whiskey, absinthe, lavender bitters, lemon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beverage-section">
+                    <h3>Non-Alcoholic</h3>
+                    
+                    <div class="beverage-list">
+                        <div class="beverage-item">
+                            <span class="name">Espresso</span>
+                            <span class="price">$4</span>
+                        </div>
+                        <div class="beverage-item">
+                            <span class="name">Cappuccino</span>
+                            <span class="price">$5</span>
+                        </div>
+                        <div class="beverage-item">
+                            <span class="name">Freshly Brewed Coffee</span>
+                            <span class="price">$4</span>
+                        </div>
+                        <div class="beverage-item">
+                            <span class="name">Premium Tea Selection</span>
+                            <span class="price">$5</span>
+                        </div>
+                        <div class="beverage-item">
+                            <span class="name">Soft Drinks</span>
+                            <span class="price">$4</span>
+                        </div>
+                        <div class="beverage-item">
+                            <span class="name">Freshly Squeezed Juices</span>
+                            <span class="price">$6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dietary-info">
+        <div class="container">
+            <h2>Dietary Information</h2>
+            <p>We take dietary restrictions and allergies very seriously. Please inform our staff of any allergies or dietary requirements. Our kitchen can accommodate various dietary needs including vegetarian, vegan, gluten-free, and other restrictions.</p>
+            <div class="dietary-legend">
+                <div class="legend-item">
+                    <span class="legend-tag">🌱 Vegetarian</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-tag">🥬 Vegan</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-tag">🌾 Gluten-Free</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-tag">🌊 Pescatarian</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-tag">✨ Seasonal</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-tag">👨‍🍳 Chef's Special</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-cta">
+        <div class="container">
+            <h2>Ready to Dine With Us?</h2>
+            <p>Book your table now and experience culinary excellence</p>
+            <a href="index.html#reservation" class="btn btn-primary">Make a Reservation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MoonLIght</h4>
+                    <p>Where culinary passion meets elegant hospitality.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <p>Instagram • Facebook • Twitter</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>(555) 123-4567<br>info@MoonLight.com</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© 2026 MoonLIght. All rights reserved. | Privacy Policy</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/menu-script.js"></script>
+</body>
+</html>
