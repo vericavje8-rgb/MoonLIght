@@ -1,9 +1,9 @@
 hladna predjela                                           
 pršut 100 grama 13,50                                              13,50€
-govčji sir 100 grama 12,50                                        12,50€
+Ovčji sir 100 grama 12,50                                        12,50€
 sir sa tartufima 100 grama 15,50                                   15,50€
 hladni mix za 2 osobe                                              36,50€
-riblji mix namaz (bakalra, tuna, losos pašete)                    12,00€
+riblji mix namaz (bakalar, tuna, losos pašete)                    12,00€
 salata hobotnica (zelena salata, krumpir, rajčica, hobotnica)     12,00€
 salata od morskih plodova                                          12,00€
 salata sa škampima 300 grama                                       14,50€
@@ -91,7 +91,7 @@ punjena lignje(šunka, sir)                                         17,50€
 škampi na buzaru                                                   25,50€
 škampi na žaru                                                     24,50€
 dagnje na buzaru                                                   13,50€
-mješanje školjke na buzaru (2 pers )                               39,00€
+mješane školjke na buzaru (2 pers )                               39,00€
 
 jakopove kapice (1kom)                                             6,00€
 mješana panirana riba (2 osobe)                                    45,00€
