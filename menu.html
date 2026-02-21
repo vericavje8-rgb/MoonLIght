@@ -5,26 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - MoonLIght</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Performance: Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/menu-style.css">
+    
+    <!-- Performance Script -->
+    <script src="assets/js/performance.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
                 <h1>🌙 MoonLIght</h1>
-                <p class="tagline">Fine Dining Experience</p>
+                <p class="tagline">Iskustvo Fino Dining</p>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="menu2.html">Menu</a></li>
-                    <li><a href="index.html#ambiance">Ambiance</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <li><a href="index.html#reservation" class="btn-nav">Reserve</a></li>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="index.html#about">O Nama</a></li>
+                    <li><a href="menu2.html">Jelovnik</a></li>
+                    <li><a href="index.html#ambiance">Ambijent</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
+                    <li><a href="index.html#reservation" class="btn-nav">Rezerviraj</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,31 +40,31 @@
 
     <section class="menu-hero">
         <div class="container">
-            <h1>Our Menu</h1>
-            <p>Curated with passion, prepared with perfection</p>
+            <h1>Naš Jelovnik</h1>
+            <p>Kreiranjmo sa strascu, pripravljeno sa savršenstvom</p>
         </div>
     </section>
 
     <section class="menu-intro">
         <div class="container">
-            <p>Our chef sources the finest seasonal ingredients from local farms and sustainable suppliers. Each dish is carefully crafted to deliver an unforgettable culinary experience. We offer a diverse selection of appetizers, main courses, and desserts, complemented by our carefully curated wine list.</p>
+            <p>Naš chef bira najfinija sezonska jela od lokalnih farmi i održivih dobavljača. Svako jelo je pažljivo oblikovano da pruži nezaboravno kulinarsko iskustvo. Nudimo širok izbor predjela, glavnih jela i deserta, upotpunjen našim pažljivo kreiranim izborom vina.</p>
         </div>
     </section>
 
     <section class="menu-filters">
         <div class="container">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="hladna-predjela">Cold Appetizers</button>
-            <button class="filter-btn" data-filter="salate">Salads</button>
-            <button class="filter-btn" data-filter="juhe">Soups</button>
-            <button class="filter-btn" data-filter="njoki">Gnocchi</button>
-            <button class="filter-btn" data-filter="tjestenine">Pasta</button>
-            <button class="filter-btn" data-filter="rižoto">Risotto</button>
-            <button class="filter-btn" data-filter="mesna-jela">Meat Dishes</button>
-            <button class="filter-btn" data-filter="riblja-jela">Fish Dishes</button>
-            <button class="filter-btn" data-filter="prilozi">Sides</button>
-            <button class="filter-btn" data-filter="dodaci-supplementi">Extras</button>
-            <button class="filter-btn" data-filter="deserti">Desserts</button>
+            <button class="filter-btn active" data-filter="all">Sve</button>
+            <button class="filter-btn" data-filter="hladna-predjela">Hladna Predjela</button>
+            <button class="filter-btn" data-filter="salate">Salate</button>
+            <button class="filter-btn" data-filter="juhe">Juhe</button>
+            <button class="filter-btn" data-filter="njoki">Njoki</button>
+            <button class="filter-btn" data-filter="tjestenine">Tjestenine</button>
+            <button class="filter-btn" data-filter="rižoto">Rižoto</button>
+            <button class="filter-btn" data-filter="mesna-jela">Mesna Jela</button>
+            <button class="filter-btn" data-filter="riblja-jela">Riblja Jela</button>
+            <button class="filter-btn" data-filter="prilozi">Prilozi</button>
+            <button class="filter-btn" data-filter="dodaci-supplementi">Dodaci</button>
+            <button class="filter-btn" data-filter="deserti">Deserti</button>
             <button class="filter-btn" data-filter="pizza">Pizza</button>
         </div>
     </section>
@@ -65,7 +73,7 @@
         <div class="container">
             <!-- COLD APPETIZERS -->
             <div class="menu-section" data-category="hladna-predjela">
-                <h2>Cold Appetizers - Hladna Predjela</h2>
+                <h2>Hladna Predjela</h2>
                 
                 <div class="menu-grid">
                     <div class="menu-card">

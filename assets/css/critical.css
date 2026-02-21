@@ -1,0 +1,156 @@
+/* ============ CRITICAL CSS - Above-the-fold styles ============ */
+/* Load instantly for better LCP (Largest Contentful Paint) */
+
+/* Variables */
+:root {
+    --primary: #2d1810;
+    --secondary: #8b6f47;
+    --accent: #d4a574;
+    --light-bg: #faf7f2;
+    --text-dark: #2d1810;
+    --text-light: #6b5c4a;
+    --white: #ffffff;
+    --gold: #c9a961;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Montserrat', sans-serif;
+}
+
+/* Critical Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--text-dark);
+    background: var(--light-bg);
+    line-height: 1.6;
+}
+
+/* Container - used everywhere */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Critical Header Styles */
+header {
+    background: var(--primary);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo h1 {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: -0.3rem;
+}
+
+/* Critical Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav a:hover, nav a.active {
+    color: var(--gold);
+}
+
+/* Mobile menu button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--gold);
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Hide non-critical content initially */
+.below-fold {
+    visibility: hidden;
+}
+
+.below-fold.loaded {
+    visibility: visible;
+}
+
+/* Mobile Critical Styles */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--primary);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    nav.active {
+        max-height: 300px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 0;
+    }
+    
+    nav li {
+        text-align: center;
+        padding: 0.8rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+}

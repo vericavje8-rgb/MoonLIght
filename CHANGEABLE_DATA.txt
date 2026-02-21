@@ -1,0 +1,326 @@
+═══════════════════════════════════════════════════════════════
+MOONLIGHT WEBSITE - CHANGEABLE DATA & REBRANDING GUIDE
+═══════════════════════════════════════════════════════════════
+Last Updated: February 12, 2026
+Files Affected: All HTML files, config.js, meta tags, schema.org
+
+═══════════════════════════════════════════════════════════════
+RESTAURANT NAME (Replace "MoonLight" with real name)
+═══════════════════════════════════════════════════════════════
+Current: "MoonLight"
+Occurrences: ~15+ times throughout the site
+Files: index.html, menu2.html, menu.html, menu2 copy.html, config.js
+Note: Case-sensitive - "MoonLIght" appears in some places
+
+═══════════════════════════════════════════════════════════════
+CONTACT INFORMATION (Update in config.js & index.html)
+═══════════════════════════════════════════════════════════════
+
+ADDRESS:
+  Street: "123 Culinary Avenue"
+  City: "Gourmet City"
+  State: "GC"
+  ZIP: "12345"
+  Full Address: "123 Culinary Avenue, Gourmet City, GC 12345"
+
+PHONE:
+  Current: "+15551234567"
+  Display Format: "(555) 123-4567"
+  Location: index.html, config.js
+
+EMAIL:
+  Current: "info@MoonLight.com"
+  Location: index.html, config.js
+
+HOURS OF OPERATION:
+  Monday-Thursday: 5PM - 11PM
+  Friday-Saturday: 5PM - 12AM
+  Sunday: 5PM - 10PM
+  Location: index.html (Contact section), config.js
+
+═══════════════════════════════════════════════════════════════
+ABOUT SECTION TEXT (index.html - lines 95-105)
+═══════════════════════════════════════════════════════════════
+
+MAIN DESCRIPTION:
+  "Welcome to MoonLIght, where culinary passion meets elegant 
+   hospitality. Since 2010, we've been serving the finest cuisine 
+   using locally-sourced, seasonal ingredients."
+
+ADDITIONAL DETAILS:
+  "Our award-winning chefs blend traditional techniques with 
+   modern innovation to create unforgettable dishes. Every plate 
+   tells a story of dedication, quality, and artistry."
+
+HIGHLIGHTS (to be customized):
+  - "15+ Years Experience"
+  - "Award-Winning" (removed: Michelin Star Recognition)
+
+═══════════════════════════════════════════════════════════════
+SERVICES/VALUES SECTION (index.html - lines 117-140)
+═══════════════════════════════════════════════════════════════
+
+1. Premium Wine Selection
+   "Curated collection of over 300 wines from world-class vineyards."
+
+2. Expert Chefs
+   "Award-winning culinary team with decades of combined experience."
+
+3. Ambiance
+   "Elegant setting with live jazz performances on weekends."
+
+4. Fresh Ingredients
+   "Sourced locally from sustainable and trusted suppliers."
+
+5. Attention to Detail
+   "Every dish crafted with precision and care for perfection."
+
+6. Excellence
+   "Consistent recognition and awards for outstanding service."
+
+═══════════════════════════════════════════════════════════════
+AMBIANCE SECTION (index.html - lines 150-171)
+═══════════════════════════════════════════════════════════════
+
+1. Elegant Setting
+   "Soft lighting, intimate booths, and sophisticated décor create 
+    the perfect romantic atmosphere."
+
+2. Wine Selection
+   "Curated wine list with over 300 selections from world-class vineyards."
+
+3. Live Music
+   "Friday & Saturday evenings featuring live jazz performances."
+
+4. Professional Staff
+   "Knowledgeable servers trained in fine dining service standards."
+
+═══════════════════════════════════════════════════════════════
+META TAGS & SEO CONTENT
+═══════════════════════════════════════════════════════════════
+
+HOMEPAGE TITLE:
+  Current: "MoonLight | Fine Dining Restaurant | Mediterranean Cuisine"
+  File: index.html
+
+HOMEPAGE META DESCRIPTION:
+  Current: "MoonLight fine dining restaurant. Experience exquisite Mediterranean 
+  cuisine, fresh seafood, premium wines, and impeccable service."
+  File: index.html
+
+MENU PAGE TITLE:
+  Current: "MoonLight Menu | Fine Dining Mediterranean Cuisine & Premium Wines"
+  File: menu2.html
+
+MENU PAGE META DESCRIPTION:
+  Current: "Explore MoonLight's exquisite fine dining menu featuring Mediterranean 
+  cuisine, fresh seafood, premium wines, and signature dishes."
+  File: menu2.html
+
+KEYWORDS:
+  Current: "fine dining, Mediterranean cuisine, seafood, wine pairing, premium dining"
+  Files: Various HTML files
+
+AUTHOR:
+  Current: "MoonLight"
+  File: All HTML files
+
+═══════════════════════════════════════════════════════════════
+OPEN GRAPH TAGS (Social Media)
+═══════════════════════════════════════════════════════════════
+
+og:title: "MoonLight | Fine Dining Restaurant"
+
+og:description: "Experience exquisite Mediterranean cuisine and impeccable 
+service at MoonLight fine dining restaurant."
+
+og:image URL: https://vericavje8-rgb.github.io/MoonLIght/assets/images/hero-restaurant.jpg
+  (Replace with your own restaurant image when ready)
+
+═══════════════════════════════════════════════════════════════
+TWITTER CARD TAGS
+═══════════════════════════════════════════════════════════════
+
+twitter:title: "MoonLight Fine Dining"
+
+twitter:description: "Discover exquisite Mediterranean cuisine and premium 
+dining experience"
+
+twitter:image: https://vericavje8-rgb.github.io/MoonLIght/assets/images/hero-restaurant.jpg
+  (Replace with your own restaurant image when ready)
+
+═══════════════════════════════════════════════════════════════
+SCHEMA.ORG STRUCTURED DATA (index.html)
+═══════════════════════════════════════════════════════════════
+
+Restaurant Name: "MoonLight"
+
+Restaurant Description: 
+  "Exquisite fine dining restaurant offering Mediterranean cuisine, 
+   fresh seafood, and premium wines"
+
+Cuisine Type: "Mediterranean"
+
+Price Range: "$$$$" (Four dollar signs = high-end fine dining)
+
+Menu URL: https://vericavje8-rgb.github.io/MoonLIght/menu2.html
+
+═══════════════════════════════════════════════════════════════
+FOOTER TEXT (index.html)
+═══════════════════════════════════════════════════════════════
+
+Tagline: "Where culinary passion meets elegant hospitality."
+
+Copyright: "© 2026 MoonLIght. All rights reserved."
+
+═══════════════════════════════════════════════════════════════
+HERO SECTION (index.html)
+═══════════════════════════════════════════════════════════════
+
+Headline: "Culinary Excellence Awaits"
+
+Subheading: "Indulge in an unforgettable dining experience with 
+chef-curated dishes and premium wines"
+
+═══════════════════════════════════════════════════════════════
+CONFIG.JS CONFIGURATION FILE
+═══════════════════════════════════════════════════════════════
+File Location: assets/js/config.js
+
+const siteConfig = {
+  // Restaurant Info
+  restaurantName: "MoonLight",
+  tagline: "Fine Dining Experience",
+  
+  // Domain & URLs
+  domain: "https://vericavje8-rgb.github.io/MoonLIght",
+  homeUrl: "https://vericavje8-rgb.github.io/MoonLIght/index.html",
+  menuUrl: "https://vericavje8-rgb.github.io/MoonLIght/menu2.html",
+  qrUrl: "https://vericavje8-rgb.github.io/MoonLIght/qr-code.html",
+  
+  // Contact Information
+  phone: "+15551234567",
+  email: "info@MoonLight.com",
+  
+  // Address
+  address: {
+    street: "123 Culinary Avenue",
+    city: "Gourmet City",
+    state: "GC",
+    zip: "12345",
+    country: "USA",
+    fullAddress: "123 Culinary Avenue, Gourmet City, GC 12345, USA"
+  },
+  
+  // Hours
+  hours: {
+    monday_thursday: "5PM - 11PM",
+    friday_saturday: "5PM - 12AM",
+    sunday: "5PM - 10PM"
+  },
+  
+  // SEO & Meta
+  description: "Exquisite fine dining restaurant offering Mediterranean cuisine, 
+    fresh seafood, and premium wines",
+  keywords: "fine dining, Mediterranean cuisine, seafood, premium wines, restaurant",
+  
+  // Social Media (if you add these later)
+  social: {
+    facebook: "",
+    instagram: "",
+    twitter: ""
+  },
+  
+  // Business Info
+  established: 2010,
+  cuisine: "Mediterranean",
+  priceRange: "$$$$"
+};
+
+═══════════════════════════════════════════════════════════════
+GOOGLE MAP EMBED (index.html - line 178-187)
+═══════════════════════════════════════════════════════════════
+
+Current URL includes dummy coordinates:
+https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e8290ecd%3A0x123culinaryave!2s123%20Culinary%20Avenue%20Gourmet%20City!5e0!3m2!1sen!2sus!4v1234567890
+
+ACTION NEEDED: Generate new Google Maps embed for actual restaurant location
+
+═══════════════════════════════════════════════════════════════
+DOMAIN & URL REFERENCES
+═══════════════════════════════════════════════════════════════
+
+Current Domain (Temporary): 
+  https://vericavje8-rgb.github.io/MoonLIght
+
+When you get your real domain:
+  Replace ALL instances of: "https://vericavje8-rgb.github.io/MoonLIght"
+  With: "https://yourrealdomainname.com"
+
+Affected Files:
+  - index.html
+  - menu2.html
+  - menu.html
+  - menu.html copy
+  - qr-code.html
+  - config.js
+  - sitemap.xml
+  - robots.txt (after launch)
+
+═══════════════════════════════════════════════════════════════
+MARKDOWN REMOVED - MICHELIN REFERENCES
+═══════════════════════════════════════════════════════════════
+
+The following Michelin-related content has been REMOVED:
+  - "Michelin Star Recognition" from About highlights
+  - "michelin: true" from config.js
+
+If your restaurant achieves Michelin recognition in the future:
+  1. Add back to highlights in index.html
+  2. Update config.js to include: michelin: true
+
+═══════════════════════════════════════════════════════════════
+IMPORTANT NOTES FOR REBRANDING
+═══════════════════════════════════════════════════════════════
+
+1. UPDATE PRIORITY:
+   - First: Update config.js (24 values to change)
+   - Second: Update HTML meta tags
+   - Third: Update content sections
+   - Fourth: Update domain references
+
+2. IMAGES TO REPLACE:
+   - Hero image: assets/images/hero-restaurant.jpg
+   - Keep same filename but replace photo
+
+3. AFTER CONTRACT SIGNING:
+   - Enable crawlers: Change robots.txt "Disallow: /" to "Allow: /"
+   - Submit sitemap.xml to Google Search Console
+
+4. CUISINE REFERENCES:
+   - All mention "Mediterranean" - update if different cuisine type
+   - Search for: "Mediterranean", "seafood", "fresh"
+   - Update to match your actual cuisine
+
+5. WINE REFERENCES:
+   - Mentions "300+ wines" - update to actual count
+   - "300 selections" appears multiple times
+
+6. AMBIANCE REFERENCES:
+   - "Live jazz on weekends" - update to actual entertainment
+   - Adjust hours if different
+
+═══════════════════════════════════════════════════════════════
+TOTAL CHANGEABLE ITEMS: ~85+ references
+═══════════════════════════════════════════════════════════════
+
+Name/Brand: 15+ 
+Contact Info: 8
+URLs/Domain: 25+
+Meta Tags: 12
+Content Text: 20+
+Other: 10+
+
+═══════════════════════════════════════════════════════════════
+END OF CHANGEABLE DATA REFERENCE
+═══════════════════════════════════════════════════════════════

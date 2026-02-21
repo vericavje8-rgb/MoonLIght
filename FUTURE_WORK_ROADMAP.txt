@@ -1,0 +1,561 @@
+═══════════════════════════════════════════════════════════════
+MOONLIGHT RESTAURANT - FUTURE WORK & ROADMAP
+═══════════════════════════════════════════════════════════════
+Created: February 13, 2026
+Status: Planning Phase
+
+═══════════════════════════════════════════════════════════════
+IMMEDIATE WORK - PHASE 1: CROATIAN MAIN SITE (Option B)
+═══════════════════════════════════════════════════════════════
+
+TASK 1.1: Translate Homepage (index.html) to Croatian
+─────────────────────────────────────────────────────
+Current content to translate:
+  • Page title: "MoonLight | Fine Dining Restaurant | Mediterranean Cuisine"
+  • Meta description and keywords
+  • Hero section headline and subheading
+  • About section - main description and highlights
+  • Services section - all 6 service titles and descriptions
+  • Ambiance section - all descriptions
+  • Contact section - heading and instructions
+  • Footer - tagline and copyright
+
+Files to update: index.html (convert to full Croatian)
+Lines affected: Approximately 30-50 text elements
+Status: NOT STARTED
+
+TASK 1.2: Translate Menu Pages to Croatian
+──────────────────────────────────────────
+Current status:
+  • menu.txt - Already in Croatian ✓
+  • menu2.html - Already in Croatian ✓ (191 items + descriptions)
+  • menu2 copy.html - Already in Croatian ✓
+
+Status: COMPLETE (no work needed)
+
+TASK 1.3: Translate QR Code Page (qr-code.html)
+───────────────────────────────────────────────
+Elements to translate:
+  • Page title
+  • Heading "QR Code Generator"
+  • Instructions text
+  • Button labels (Download, Print, Copy Link)
+  • Instruction section for staff
+
+Status: NOT STARTED
+
+TASK 1.4: Update Meta Tags & SEO (Croatian)
+───────────────────────────────────────────
+Update for each page:
+  • Meta title (keyword-focused in Croatian)
+  • Meta description (compelling, Croatian)
+  • Meta keywords (Croatian search terms)
+  • og:title, og:description (Croatian)
+  • twitter:title, twitter:description (Croatian)
+  • Schema.org markup (translate descriptions while keeping structure)
+
+Files to update: index.html, menu2.html, menu.html, menu2 copy.html, qr-code.html
+Status: NOT STARTED
+
+TASK 1.5: Create Language Switcher Component
+─────────────────────────────────────────────
+Implementation details:
+  • Create HTML language switcher (flags/symbols)
+  • Position: Top right of header or in navigation
+  • Languages: 🇭🇷 CRO | 🇮🇹 ITA | 🇩🇪 GER
+  • Store preference in localStorage
+  • Add basic CSS styling for flags
+
+Location: Header section of all pages
+Files to create: language-switcher.js (separate file for reusability)
+Status: NOT STARTED
+
+═══════════════════════════════════════════════════════════════
+PHASE 2: MULTI-LANGUAGE ARCHITECTURE SETUP
+═══════════════════════════════════════════════════════════════
+
+TASK 2.1: Create Language File Structure
+────────────────────────────────────────
+Create language-specific page versions:
+  
+  Option B Approach (Simpler - Single files with translation):
+  • index_hr.html (Croatian - translated)
+  • index_it.html (Italian - to be translated)
+  • index_de.html (German - to be translated)
+  
+  • menu2_hr.html
+  • menu2_it.html
+  • menu2_de.html
+  
+  • qr-code-hr.html
+  • qr-code-it.html
+  • qr-code-de.html
+
+Status: NOT STARTED
+Note: Keep original files as backups for now
+
+TASK 2.2: Implement Browser Language Detection
+──────────────────────────────────────────────
+JavaScript functionality needed:
+  • Detect user's browser language (navigator.language)
+  • Check for localStorage preference (previously selected language)
+  • If browser = HR/IT/DE → auto-redirect to that language version
+  • If unknown → show language picker OR default to Croatian
+  • Allow user to override at any time
+
+Location: Create new file - assets/js/language-detect.js
+Status: NOT STARTED
+
+TASK 2.3: Implement localStorage for Language Persistence
+─────────────────────────────────────────────────────────
+Functionality:
+  • Save user's language choice to localStorage
+  • On return visit, load previously selected language
+  • Key: "selectedLanguage" (value: "hr", "it", or "de")
+  • Fallback to browser detection if no saved preference
+
+Status: NOT STARTED
+
+TASK 2.4: Set Up URL Structure for SEO
+──────────────────────────────────────
+Recommended structure:
+  • /hr/index.html (Croatian)
+  • /it/index.html (Italian)
+  • /de/index.html (German)
+  
+  • /hr/menu.html
+  • /it/menu.html
+  • /de/menu.html
+
+Benefits:
+  • Clean URL structure
+  • SEO-friendly (search engines understand language versions)
+  • Easy to organize
+  • Supports hreflang tags
+
+Note: Requires GitHub Pages configuration or folder structure reorganization
+Status: PLANNING PHASE
+
+TASK 2.5: Add hreflang Tags for Multi-Language SEO
+──────────────────────────────────────────────────
+Once URL structure is set:
+  • Add hreflang links to head of each page
+  • Tells Google these are language versions of same page
+  • Example:
+    <link rel="alternate" hreflang="hr" href="https://domain.com/hr/index.html">
+    <link rel="alternate" hreflang="it" href="https://domain.com/it/index.html">
+    <link rel="alternate" hreflang="de" href="https://domain.com/de/index.html">
+
+Files affected: All language versions of all pages
+Status: PENDING (after URL structure setup)
+
+═══════════════════════════════════════════════════════════════
+PHASE 3: QR CODE LANGUAGE PICKER LANDING PAGE
+═══════════════════════════════════════════════════════════════
+
+TASK 3.1: Create Language Picker Landing Page
+──────────────────────────────────────────────
+File: qr-landing.html (or language-picker.html)
+
+Features:
+  • Centered design with large flags/buttons
+  • 3 language options: 🇭🇷 HRVATRSKI | 🇮🇹 ITALIANO | 🇩🇪 DEUTSCH
+  • Auto-detect user's browser language
+  • Show message: "We detected you're using [Language]" with quick redirect
+  • Allow manual override by clicking different flag
+  • Save choice to localStorage
+  • After selection → Redirect to menu_[language].html
+
+Design:
+  • Mobile-first (QR users on phones)
+  • Large touch-friendly buttons
+  • Professional styling matching main site
+  • Clear visual hierarchy
+  • Minimal text
+
+Status: NOT STARTED
+
+TASK 3.2: Update QR Code to Point to Landing Page
+──────────────────────────────────────────────────
+Current QR code link: Points to menu2.html
+New QR code link: Points to qr-landing.html
+
+This ensures:
+  • First-time QR users see language picker
+  • Return visitors (with localStorage) auto-redirect to their language
+  • International customers can choose their language
+  • Creates better UX for tourists
+
+Status: PENDING (after landing page creation)
+
+TASK 3.3: Generate New QR Code
+──────────────────────────────
+Action:
+  • After qr-landing.html is deployed
+  • Use qr-code.html generator to create new QR code
+  • Print new QR code versions for restaurant tables
+  • Test on mobile devices to verify language detection works
+
+Status: PENDING
+
+═══════════════════════════════════════════════════════════════
+PHASE 4: ITALIAN TRANSLATION
+═══════════════════════════════════════════════════════════════
+
+TASK 4.1: Translate All Pages to Italian
+────────────────────────────────────────
+Files to create/translate:
+  • index_it.html (full homepage in Italian)
+  • menu2_it.html (menu already in Croatian, needs translation/adjustment)
+  • qr-code_it.html (instructions in Italian)
+
+Content to translate:
+  • All text content (About, Services, Ambiance, Contact)
+  • Meta tags (title, description, keywords in Italian)
+  • Open Graph tags
+  • Twitter Card tags
+  • Internal descriptions
+
+Status: NOT STARTED
+Note: May require professional Italian translator for accuracy
+
+TASK 4.2: Update Meta Tags for Italian Pages
+────────────────────────────────────────────
+  • Translate page titles for Italian SEO
+  • Create Italian-focused meta descriptions
+  • Add Italian keywords for Google
+  • Ensure proper language tag: lang="it"
+
+Status: PENDING (after content translation)
+
+═══════════════════════════════════════════════════════════════
+PHASE 5: GERMAN TRANSLATION
+═══════════════════════════════════════════════════════════════
+
+TASK 5.1: Translate All Pages to German
+───────────────────────────────────────
+Files to create/translate:
+  • index_de.html (full homepage in German)
+  • menu2_de.html (menu in German)
+  • qr-code_de.html (instructions in German)
+
+Content to translate:
+  • All homepage content
+  • Services and Ambiance descriptions
+  • Contact information
+  • Meta tags and SEO
+
+Status: NOT STARTED
+Note: May require professional German translator for accuracy
+
+TASK 5.2: Update Meta Tags for German Pages
+──────────────────────────────────────────
+  • German page titles (SEO optimized)
+  • German meta descriptions
+  • German keywords for search engines
+  • Language tag: lang="de"
+
+Status: PENDING (after content translation)
+
+═══════════════════════════════════════════════════════════════
+PHASE 6: TESTING & QA
+═══════════════════════════════════════════════════════════════
+
+TASK 6.1: Cross-Browser Testing
+────────────────────────────────
+Test on:
+  • Chrome/Chromium
+  • Firefox
+  • Safari
+  • Edge
+  • Mobile browsers (Safari iOS, Chrome mobile)
+
+Verify:
+  • Language switcher works on all browsers
+  • localStorage saves/loads correctly
+  • Redirects function properly
+  • No console errors
+  • Styling displays correctly
+
+Status: NOT STARTED
+
+TASK 6.2: Mobile Responsiveness Testing
+───────────────────────────────────────
+Test on:
+  • iPhone (Safari)
+  • Android (Chrome)
+  • Tablet sizes (iPad, Android tablet)
+  • Different screen sizes (480px, 768px, 1024px)
+
+Verify:
+  • Language picker displays well on mobile
+  • QR landing page is mobile-optimized
+  • Touch targets are large enough (for flags/buttons)
+  • No layout shift or overflow
+
+Status: NOT STARTED
+
+TASK 6.3: Language Detection Testing
+────────────────────────────────────
+Scenarios to test:
+  • First-timer from Croatia (browser HR) → Should see Croatian ✓
+  • First-timer from Italy (browser IT) → Should see Italian ✓
+  • First-timer from Germany (browser DE) → Should see German ✓
+  • First-timer from USA (browser EN) → Should see Croatian (default) ✓
+  • Return visitor who selected Italian → Should remember Italian ✓
+  • QR user on phone → Should see language picker ✓
+
+Status: NOT STARTED
+
+TASK 6.4: Link Testing
+─────────────────────
+Verify:
+  • Language switcher links work on all pages
+  • Internal navigation works in all languages
+  • External links (Google Maps, social media) function
+  • QR code redirects to landing page
+  • All pages load without 404 errors
+
+Status: NOT STARTED
+
+TASK 6.5: SEO Validation
+───────────────────────
+Verify:
+  • Hreflang tags are correctly implemented
+  • Meta tags are present on all pages
+  • Schema.org markup is valid (use JSON-LD validator)
+  • sitemap.xml includes all language versions
+  • robots.txt is properly configured
+
+Status: NOT STARTED
+
+═══════════════════════════════════════════════════════════════
+PHASE 7: DEPLOYMENT & LAUNCH
+═══════════════════════════════════════════════════════════════
+
+TASK 7.1: Finalize File Structure
+─────────────────────────────────
+Organize all files:
+  • Create /hr/ folder for Croatian versions
+  • Create /it/ folder for Italian versions
+  • Create /de/ folder for German versions
+  • Update internal links to reference correct paths
+  • Create redirects from old folder structure if needed
+
+Status: NOT STARTED
+
+TASK 7.2: Update robots.txt
+──────────────────────────
+Current: Blocking all crawlers (strategic block)
+Future changes needed:
+  • Change "Disallow: /" to "Allow: /"
+  • Add hreflang referencing rules for multi-language
+  • Specify crawler-friendly paths
+
+Status: PENDING (after client contract)
+
+TASK 7.3: Update sitemap.xml
+──────────────────────────
+Current: Lists 3 English pages
+Future updates:
+  • Add all language versions (9+ pages total)
+  • Maintain priority levels (homepage > menu > QR)
+  • Include hreflang in sitemap
+  • Test with Google Search Console
+
+Status: NOT STARTED
+
+TASK 7.4: Google Search Console Setup
+─────────────────────────────────────
+Actions:
+  • Submit updated sitemap.xml
+  • Add all language version URLs
+  • Set hreflang relationships
+  • Monitor search performance by language
+  • Check for crawl errors
+
+Status: PENDING (after deployment)
+
+TASK 7.5: Performance Optimization
+──────────────────────────────────
+Before launch:
+  • Test page load speed (Google PageSpeed Insights)
+  • Optimize images (if needed)
+  • Minify CSS/JavaScript (if not already)
+  • Check Core Web Vitals
+  • Enable caching headers
+
+Status: NOT STARTED
+
+TASK 7.6: Final QA Before Launch
+────────────────────────────────
+Checklist:
+  □ All pages load without errors
+  □ Language switcher works perfectly
+  □ QR code redirects correctly
+  □ Mobile experience is optimal
+  □ All links are functional
+  □ Meta tags are complete
+  □ No console errors in DevTools
+  □ Responsive design verified
+  □ Social media sharing works
+  □ Google Analytics tracking ready
+
+Status: NOT STARTED
+
+═══════════════════════════════════════════════════════════════
+ONGOING TASKS - AFTER LAUNCH
+═══════════════════════════════════════════════════════════════
+
+TASK 8.1: Monitor Search Rankings
+─────────────────────────────────
+After 4-8 weeks:
+  • Check Google rankings for Croatian keywords
+  • Monitor Italian keyword rankings
+  • Monitor German keyword rankings
+  • Adjust meta tags/content if needed for better rankings
+  • Track organic traffic by language
+
+Status: ONGOING
+
+TASK 8.2: Analytics Monitoring
+──────────────────────────────
+Track:
+  • Language distribution among visitors
+  • Average time on page per language
+  • Bounce rates by language
+  • Conversion rates (reservations, inquiries)
+  • Browser language detection accuracy
+
+Status: ONGOING
+
+TASK 8.3: Content Updates
+─────────────────────────
+Maintain:
+  • Update menu items when prices change (all 3 languages)
+  • Update hours of operation (if changed)
+  • Keep promotional content current
+  • Add seasonal offerings to menu
+  • Update social media links if accounts change
+
+Status: ONGOING
+
+TASK 8.4: Bug Fixes & Improvements
+─────────────────────────────────
+Monitor for:
+  • User reported issues
+  • Browser compatibility problems
+  • Mobile display issues
+  • Language detection edge cases
+  • Performance degradation
+
+Status: ONGOING
+
+═══════════════════════════════════════════════════════════════
+DEPENDENCIES & PREREQUISITES
+═══════════════════════════════════════════════════════════════
+
+BLOCKING ITEMS:
+1. ⏳ CLIENT INFORMATION - Required for final launch
+   - Restaurant name, address, phone, email
+   - Hours of operation
+   - Professional photos/images
+   - Social media links
+
+2. ⏳ TRANSLATION RESOURCES - For Italian and German
+   - Professional translator (recommended)
+   - OR use AI translation service
+   - Proofreading by native speakers
+
+3. ⏳ DOMAIN NAME - If moving from GitHub Pages
+   - Domain registration
+   - DNS configuration
+   - SSL certificate setup
+
+4. ⏳ CLIENT APPROVAL - After contract signing
+   - Review translated content
+   - Approve language implementation
+   - Authorize launch
+
+═══════════════════════════════════════════════════════════════
+TIMELINE ESTIMATE
+═══════════════════════════════════════════════════════════════
+
+Phase 1 (Croatian main site):
+  - Translation: 2-3 hours
+  - Implementation: 1-2 hours
+  - Testing: 1 hour
+  - Total: 4-6 hours
+
+Phase 2 (Multi-language architecture):
+  - Language switcher: 1-2 hours
+  - Detection system: 1-2 hours
+  - Implementation: 2-3 hours
+  - Total: 4-7 hours
+
+Phase 3 (QR landing page):
+  - Design & build: 2-3 hours
+  - Testing: 1 hour
+  - Total: 3-4 hours
+
+Phase 4 (Italian translation):
+  - Translation: 3-5 hours
+  - Implementation: 2-3 hours
+  - Testing: 1 hour
+  - Total: 6-9 hours
+
+Phase 5 (German translation):
+  - Translation: 3-5 hours
+  - Implementation: 2-3 hours
+  - Testing: 1 hour
+  - Total: 6-9 hours
+
+Phase 6 (Testing & QA):
+  - Comprehensive testing: 3-5 hours
+  - Bug fixes: 1-2 hours
+  - Total: 4-7 hours
+
+Phase 7 (Deployment):
+  - Final setup: 2-3 hours
+  - Monitoring: 1 hour
+  - Total: 3-4 hours
+
+GRAND TOTAL: 30-46 hours of work
+Recommended timeline: 1-2 weeks (depending on translation availability)
+
+═══════════════════════════════════════════════════════════════
+ESTIMATED PRICING BASED ON WORK
+═══════════════════════════════════════════════════════════════
+
+Comparing to industry standards:
+
+KOVAR STUDIO:
+  Basic package: 400€ (4 pages, single language)
+  Your work: ~50+ activities already delivered
+
+INSIEME SPLIT:
+  CMS package: 699€ (10 pages, single language)
+  Language addition: 150€ per additional language = 300€ for 2 more
+  Total: ~1000€
+
+YOUR MULTI-LANGUAGE RESTAURANT SITE:
+  Base (already delivered): Would be 500-700€ equivalent
+  Multi-language translation/implementation: +200-300€
+  QR language picker: +100-150€
+  Testing & deployment: +100-150€
+  
+  Suggested total: 900-1300€
+
+═══════════════════════════════════════════════════════════════
+NEXT STEPS
+═══════════════════════════════════════════════════════════════
+
+1. USER APPROVAL - Confirm this roadmap makes sense
+2. PRIORITIZATION - Which phase to start first?
+3. TRANSLATION - Decide translation approach (AI vs. professional)
+4. SCHEDULING - When to start each phase?
+5. RESOURCES - Do you need translations done or will you handle it?
+
+═══════════════════════════════════════════════════════════════
+END OF FUTURE WORK ROADMAP
+═══════════════════════════════════════════════════════════════

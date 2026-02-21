@@ -1,0 +1,413 @@
+/* ============ MENU SHARED STYLES - Optimized for Performance ============ */
+/* Load this file for all menu pages instead of separate menu CSS files */
+
+/* Menu Hero Section - Reusable */
+.menu-hero {
+    background: linear-gradient(135deg, rgba(45, 24, 16, 0.95) 0%, rgba(139, 111, 71, 0.9) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 0;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-hero h1 {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.menu-hero p {
+    font-size: 1.3rem;
+    opacity: 0.95;
+}
+
+/* Menu Intro */
+.menu-intro {
+    background: var(--white);
+    padding: 3rem 0;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.menu-intro p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.price-note {
+    background: linear-gradient(135deg, rgba(201, 169, 97, 0.1) 0%, rgba(212, 165, 116, 0.1) 100%);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    display: inline-block;
+    border: 1px solid rgba(201, 169, 97, 0.2);
+}
+
+/* Menu Filters - Optimized for both menu versions */
+.menu-filters {
+    background: var(--light-bg);
+    padding: 2rem 0;
+    position: sticky;
+    top: 78px;
+    z-index: 500;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.filter-btn {
+    background: var(--white);
+    color: var(--text-dark);
+    border: 2px solid var(--text-light);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--gold);
+    color: var(--primary);
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(201, 169, 97, 0.3);
+}
+
+.filter-btn.active::after {
+    content: '✓';
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+/* Menu Grid - Universal layout */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 0 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(201, 169, 97, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(45deg, var(--gold), var(--accent));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: var(--gold);
+}
+
+.menu-item:hover::before {
+    opacity: 1;
+}
+
+.menu-item h3 {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.menu-item .description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.menu-item .price {
+    color: var(--gold);
+    font-size: 1.2rem;
+    font-weight: 700;
+    float: right;
+    background: rgba(201, 169, 97, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-family: var(--font-serif);
+}
+
+.menu-item .category {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+
+/* Menu Item Images (if present) */
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Wine specific styles */
+.menu-item.wine .wine-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(201, 169, 97, 0.2);
+}
+
+.wine-type {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.wine-year {
+    color: var(--gold);
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Special dietary indicators */
+.dietary-icons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.dietary-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+.dietary-icon.vegetarian { background: #4CAF50; }
+.dietary-icon.vegan { background: #2E7D32; }
+.dietary-icon.gluten-free { background: #FF9800; }
+.dietary-icon.spicy { background: #F44336; }
+
+/* Loading states */
+.menu-loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-light);
+}
+
+.menu-loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--gold);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    margin-left: 1rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Empty state */
+.no-items {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--gold);
+    color: var(--primary);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: var(--primary);
+    color: var(--gold);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-hero {
+        padding: 3rem 0;
+    }
+    
+    .menu-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .menu-filters {
+        padding: 1.5rem 0;
+        position: static;
+    }
+    
+    .filter-buttons {
+        gap: 0.8rem;
+        padding: 0 1rem;
+    }
+    
+    .filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1.5rem 1rem 3rem;
+    }
+    
+    .menu-item {
+        padding: 1.5rem;
+    }
+    
+    .menu-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .menu-item .description {
+        font-size: 0.9rem;
+    }
+    
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .menu-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+        margin: 0.2rem;
+    }
+    
+    .menu-item {
+        padding: 1.2rem;
+    }
+    
+    .price-note {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .menu-filters,
+    .back-to-top,
+    header {
+        display: none !important;
+    }
+    
+    .menu-item {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}

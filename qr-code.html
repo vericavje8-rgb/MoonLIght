@@ -15,11 +15,19 @@
     <!-- Site Configuration -->
     <script src="assets/js/config.js"></script>
     
+    <!-- Performance: Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <!-- Performance Script -->
+    <script src="assets/js/performance.js" defer></script>
     <style>
         :root {
             --primary: #2d1810;
@@ -224,8 +232,8 @@
         <p class="subtitle">QR Kod Jelovnika</p>
 
         <div class="qr-info">
-            <h3>📱 Skeniraj da Vidis Jelovnik</h3>
-            <p>Usmjerite kameru pametnog telefona na QR kod u nastavku da trenutno pristupite nasem digitalnom jelovniku i napravite rezervaciju.</p>
+            <h3>📱 Skeniraj da Vidiš Jelovnik</h3>
+            <p>Usmjerite kameru pametnog telefona na QR kod u nastavku da trenutno pristupite našem digitalnom jelovniku i napravite rezervaciju.</p>
         </div>
 
         <div class="qr-wrapper">
@@ -234,7 +242,7 @@
 
         <div class="button-group">
             <button onclick="downloadQRCode()">📥 Preuzmi QR Kod</button>
-            <button onclick="printQRCode()">🖨️ Ispiski QR Kod</button>
+            <button onclick="printQRCode()">🖨️ Ispiši QR Kod</button>
             <button onclick="copyURL()">📋 Kopiraj URL Jelovnika</button>
         </div>
 
@@ -247,8 +255,8 @@
         <div class="instructions">
             <h4>Kako Koristiti Ovaj QR Kod:</h4>
             <ol>
-                <li>Ispiskajte ove stranice ili spremi QR kodnu sliku</li>
-                <li>Postavite ga na stolove vase restorane, pulta ili vase marketing materijale</li>
+                <li>Ispišite ovu stranicu ili spremite QR kodnu sliku</li>
+                <li>Postavite ga na stolove vašeg restorana, pult ili vaše marketing materijale</li>
                 <li>Kupci skeniraju svojom kamerom telefona ili bilo kojom QR citackom aplikacijom</li>
                 <li>Odmah ce viditi vas kompletan jelovnik i mogu napraviti rezervaciju</li>
             </ol>

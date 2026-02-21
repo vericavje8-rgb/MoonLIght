@@ -46,27 +46,35 @@
     <!-- Site Configuration -->
     <script src="assets/js/config.js"></script>
     
+    <!-- Performance: Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/menu2-style.css">
+    
+    <!-- Performance Script: Enhanced menu filtering, lazy loading, monitoring -->
+    <script src="assets/js/performance.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
                 <h1>🌙 MoonLIght</h1>
-                <p class="tagline">Fine Dining Experience</p>
+                <p class="tagline">Iskustvo Fino Dining</p>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="menu2.html">Menu</a></li>
-                    <li><a href="index.html#ambiance">Ambiance</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="index.html#about">O Nama</a></li>
+                    <li><a href="menu2.html">Jelovnik</a></li>
+                    <li><a href="index.html#ambiance">Ambijent</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -75,7 +83,7 @@
     <section class="menu-hero">
         <div class="container">
             <h1>Kompletan Jelovnik</h1>
-            <p>Nag Potpun Odabir Fino Dining Delicija</p>
+            <p>Naš potpuni odabir fino dining delicija</p>
         </div>
     </section>
 
@@ -89,12 +97,12 @@
     <section class="menu-filters">
         <div class="container">
             <button class="filter-btn active" data-filter="all">Svi Artikli</button>
-            <button class="filter-btn" data-filter="hladna-predjela">Hladne Predjele</button>
-            <button class="filter-btn" data-filter="salate">Salete</button>
+            <button class="filter-btn" data-filter="hladna-predjela">Hladna Predjela</button>
+            <button class="filter-btn" data-filter="salate">Salate</button>
             <button class="filter-btn" data-filter="juhe">Juhe</button>
             <button class="filter-btn" data-filter="njoki">Njoki</button>
             <button class="filter-btn" data-filter="tjestenine">Tjestenine</button>
-            <button class="filter-btn" data-filter="rizoto">Rizoāto</button>
+            <button class="filter-btn" data-filter="rizoto">Rižoto</button>
             <button class="filter-btn" data-filter="mesna-jela">Mesna Jela</button>
             <button class="filter-btn" data-filter="riblja-jela">Riblja Jela</button>
             <button class="filter-btn" data-filter="pizza">Pizza</button>
