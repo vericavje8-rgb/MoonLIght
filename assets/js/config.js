@@ -13,24 +13,22 @@ const siteConfig = {
   qrUrl: "https://vericavje8-rgb.github.io/MoonLIght/qr-code.html",
   
   // Contact Information
-  phone: "+15551234567",
-  email: "info@MoonLight.com",
+  phone: "",
+  email: "restoran-luna@gmail.hr",
   
   // Address
   address: {
-    street: "123 Culinary Avenue",
-    city: "Gourmet City",
-    state: "GC",
-    zip: "12345",
-    country: "USA",
-    fullAddress: "123 Culinary Avenue, Gourmet City, GC 12345, USA"
+    street: "Rivarela 2",
+    city: "Novigrad",
+    state: "Istria",
+    zip: "52466",
+    country: "Croatia",
+    fullAddress: "Rivarela 2, 52466 Novigrad, Hrvatska"
   },
   
   // Hours
   hours: {
-    monday_thursday: "5PM - 11PM",
-    friday_saturday: "5PM - 12AM",
-    sunday: "5PM - 10PM"
+    everyday: "10:30 - 22:00"
   },
   
   // SEO & Meta

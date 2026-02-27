@@ -77,8 +77,8 @@
     {
       "name": "Rezervacija",
       "short_name": "Rezerviraj",
-      "description": "Rezerviraj stol",
-      "url": "tel:+38521123456",
+      "description": "Kontaktirajte nas za rezervaciju",
+      "url": "mailto:restoran-luna@gmail.hr",
       "icons": [
         {
           "src": "assets/images/icons/phone-shortcut.png",
