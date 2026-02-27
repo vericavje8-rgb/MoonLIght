@@ -1,27 +1,80 @@
 /* ============ Menu2 Page Specific Styles ============ */
 
 .menu-hero {
-    background: linear-gradient(135deg, rgba(45, 24, 16, 0.95) 0%, rgba(139, 111, 71, 0.9) 100%);
+    background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&h=800&fit=crop');
+    background-size: cover;
+    background-position: center;
     color: var(--white);
-    text-align: center;
-    padding: 5rem 0;
-    min-height: 300px;
+    min-height: 55vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    padding-top: 80px;
+}
+
+.menu-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.65) 100%);
+    z-index: 1;
+}
+
+.menu-hero-body {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.menu-hero h1 {
+.menu-hero-title {
     font-family: var(--font-serif);
-    font-size: 3.5rem;
-    color: var(--gold);
-    margin-bottom: 1rem;
+    font-size: clamp(3.5rem, 12vw, 9rem);
     font-weight: 700;
+    font-style: italic;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
-.menu-hero p {
-    font-size: 1.3rem;
-    opacity: 0.95;
+.menu-hero-sub {
+    font-size: clamp(0.65rem, 1.5vw, 0.85rem);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+    font-family: var(--font-sans);
+}
+
+.menu-hero-bottom-bar {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.9rem 2rem;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.9);
+    font-family: var(--font-sans);
+}
+
+.menu-hero-bottom-bar .mhbb-dot {
+    color: var(--gold);
+    font-size: 1.2rem;
 }
 
 /* ============ Menu Intro ============ */
@@ -56,7 +109,7 @@
     padding: 1rem 0;
     margin: 0 0 2rem 0;
     position: sticky;
-    top: 120px;
+    top: 70px;
     z-index: 50;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(201, 169, 97, 0.2);
@@ -377,8 +430,19 @@
 }
 
 @media (max-width: 768px) {
-    .menu-hero h1 {
-        font-size: 2.2rem;
+    .menu-hero-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+    .menu-hero-bottom-bar {
+        flex-direction: column;
+        gap: 0.4rem;
+        padding: 0.7rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .mhbb-dot {
+        display: none;
     }
 
     /* HORIZONTAL SCROLLABLE FILTER BAR FOR MOBILE */
@@ -448,16 +512,7 @@
 
 @media (max-width: 480px) {
     .menu-hero {
-        padding: 3rem 0;
-        min-height: auto;
-    }
-
-    .menu-hero h1 {
-        font-size: 1.8rem;
-    }
-
-    .menu-hero p {
-        font-size: 1rem;
+        min-height: 45vh;
     }
 
     /* MOBILE HORIZONTAL FILTER BAR */
@@ -531,10 +586,6 @@
 
 /* ============ Small Mobile Phones ============ */
 @media (max-width: 480px) {
-    .menu-hero h1 {
-        font-size: 1.5rem;
-    }
-
     .menu-section h2 {
         font-size: 1.4rem;
     }

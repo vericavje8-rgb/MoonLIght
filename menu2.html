@@ -62,28 +62,37 @@
     <script src="assets/js/performance.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="site-header">
         <div class="container">
             <div class="logo">
-                <h1>🌙 MoonLIght</h1>
-                <p class="tagline">Iskustvo Fino Dining</p>
+                <a href="index.html">🌙 <span>Luna</span></a>
+                <p class="tagline">Restoran &amp; Pizzeria</p>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Početna</a></li>
                     <li><a href="index.html#about">O Nama</a></li>
-                    <li><a href="menu2.html">Jelovnik</a></li>
-                    <li><a href="index.html#ambiance">Ambijent</a></li>
+                    <li><a href="menu2.html" class="active">Jelovnik</a></li>
                     <li><a href="index.html#contact">Kontakt</a></li>
                 </ul>
             </nav>
+            <div class="nav-cta">
+                <a href="menu2.html" class="btn-nav-menu">Jelovnik</a>
+                <a href="index.html#contact" class="btn-nav-reservation">Rezervacija</a>
+            </div>
         </div>
     </header>
 
     <section class="menu-hero">
-        <div class="container">
-            <h1>Kompletan Jelovnik</h1>
-            <p>Naš potpuni odabir fino dining delicija</p>
+        <div class="menu-hero-overlay"></div>
+        <div class="menu-hero-body">
+            <h1 class="menu-hero-title">Jelovnik</h1>
+            <p class="menu-hero-sub">RESTORAN &amp; PIZZERIA &nbsp;&middot;&nbsp; NOVIGRAD, ISTRA</p>
+        </div>
+        <div class="menu-hero-bottom-bar">
+            <span>Otvoreno svaki dan &nbsp;<strong>10:30 &ndash; 22:00</strong></span>
+            <span class="mhbb-dot">&middot;</span>
+            <span>Svježa jela, lokalni sastojci</span>
         </div>
     </section>
 
@@ -584,5 +593,11 @@
     </footer>
 
     <script src="assets/js/menu2-script.js"></script>
+    <script>
+        const header = document.getElementById('site-header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 60);
+        });
+    </script>
 </body>
 </html>

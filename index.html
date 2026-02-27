@@ -74,29 +74,38 @@
     <script src="assets/js/performance.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="site-header">
         <div class="container">
             <div class="logo">
-                <h1>🌙 MoonLIght</h1>
-                <p class="tagline">Iskustvo Fino Dining</p>
+                <a href="#home">🌙 <span>Luna</span></a>
+                <p class="tagline">Restoran &amp; Pizzeria</p>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Početna</a></li>
                     <li><a href="#about">O Nama</a></li>
                     <li><a href="menu2.html">Jelovnik</a></li>
                     <li><a href="#ambiance">Ambijent</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </nav>
+            <div class="nav-cta">
+                <a href="menu2.html" class="btn-nav-menu">Pogledaj Jelovnik</a>
+                <a href="#contact" class="btn-nav-reservation">Rezervacija</a>
+            </div>
         </div>
     </header>
 
-    <section class="hero" id="home" style="background-image: url('assets/images/hero-restaurant.jpg');">
+    <section class="hero" id="home" style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1920&h=1080&fit=crop');">
         <div class="hero-overlay"></div>
-        <div class="container">
-            <h2>Kulinarsko Savršenstvo Čeka</h2>
-            <p>Uživajte u neusporedivom iskustvu jela s receptima chefa i premium vinima</p>
+        <div class="hero-body">
+            <h1 class="hero-title">Luna</h1>
+            <p class="hero-sub">RESTORAN &amp; PIZZERIA &nbsp;&middot;&nbsp; NOVIGRAD, ISTRA</p>
+            <a href="menu2.html" class="btn btn-primary">Pogledaj Jelovnik</a>
+        </div>
+        <div class="hero-bottom-bar">
+            <span class="hbb-chevron">&#8964;</span>
+            <span>Otvoreno svaki dan &nbsp;<strong>10:30 &ndash; 22:00</strong>&nbsp; &middot; &nbsp;Rivarela 2, Novigrad</span>
+            <span class="hbb-chevron">&#8964;</span>
         </div>
     </section>
 
@@ -283,5 +292,12 @@
             <p class="copyright">© 2026 MoonLIght. Sva prava zadržana. | <a href="#">Politika Privatnosti</a></p>
         </div>
     </footer>
+    <script>
+        // Header: transparent -> solid on scroll
+        const header = document.getElementById('site-header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 60);
+        });
+    </script>
 </body>
 </html>
