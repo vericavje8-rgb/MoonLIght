@@ -589,6 +589,53 @@ nav a:hover::after {
     font-size: 0.95rem;
 }
 
+/* ============ Practical Info Strip ============ */
+.info-strip {
+    background: var(--primary);
+    padding: 3.5rem 0;
+    text-align: center;
+}
+
+.info-strip-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.info-strip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+    text-align: left;
+}
+
+.info-strip-block h4 {
+    font-family: var(--font-serif);
+    color: var(--gold);
+    font-size: 1.05rem;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.25);
+    letter-spacing: 0.5px;
+}
+
+.info-strip-block ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.info-strip-block ul li {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+}
+
 /* ============ Contact Section ============ */
 .contact {
     background: var(--primary);
