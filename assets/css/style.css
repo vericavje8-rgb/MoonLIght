@@ -533,52 +533,39 @@ nav a:hover::after {
 /* ===== CATEGORY STRIP ===== */
 .cat-strip {
     background: var(--light-bg);
-    padding: 1.6rem 2.5rem 2rem;
+    padding: 3rem 2.5rem 3.5rem;
+    text-align: center;
     border-bottom: 1px solid rgba(45,24,16,0.08);
 }
-.cat-strip-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.4rem;
-}
-.cat-strip-label {
-    font-family: var(--font-sans);
-    font-size: 0.65rem;
+.cat-strip-title {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
     font-weight: 700;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: rgba(45,24,16,0.4);
+    color: var(--primary);
+    margin: 0 0 2.5rem;
 }
-.cat-strip-more {
-    font-family: var(--font-sans);
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    color: var(--gold);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-.cat-strip-more:hover { color: var(--primary); }
 .cat-strip-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
 }
 .cat-card {
-    text-decoration: none;
     display: flex;
     flex-direction: column;
-    gap: 0.65rem;
+    align-items: center;
+    gap: 0.9rem;
     transition: transform 0.3s ease;
 }
-.cat-card:hover { transform: translateY(-4px); }
+.cat-card:hover { transform: translateY(-5px); }
 .cat-card-img {
     width: 100%;
     aspect-ratio: 1 / 1;
-    border-radius: 10px;
+    border-radius: 18px;
     overflow: hidden;
     background: #e8e0d6;
+    box-shadow: 0 4px 18px rgba(45,24,16,0.10);
 }
 .cat-card-img img {
     width: 100%;
@@ -590,14 +577,34 @@ nav a:hover::after {
 .cat-card:hover .cat-card-img img { transform: scale(1.06); }
 .cat-card-name {
     font-family: var(--font-sans);
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
     color: var(--primary);
-    letter-spacing: 0.02em;
+}
+.cat-card-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.55rem 1.4rem;
+    border-radius: 50px;
+    transition: background 0.25s, transform 0.2s;
+}
+.cat-card-btn:hover {
+    background: var(--primary);
+    transform: scale(1.04);
 }
 @media (max-width: 600px) {
-    .cat-strip { padding: 1.2rem 1.2rem 1.6rem; }
-    .cat-strip-cards { grid-template-columns: repeat(2, 1fr); }
+    .cat-strip { padding: 2rem 1.2rem 2.5rem; }
+    .cat-strip-cards { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .cat-strip-title { font-size: 1.6rem; }
 }
 
 /* ===== FOOD SHOWCASE ===== */
