@@ -173,8 +173,8 @@ nav a:hover::after {
 /* ============ Hero Section ============ */
 .hero {
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: center top;
+    background-attachment: scroll;
     color: var(--white);
     min-height: 100vh;
     display: flex;
