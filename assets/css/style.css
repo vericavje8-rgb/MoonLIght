@@ -1182,6 +1182,10 @@ footer hr {
         justify-content: center;
     }
 
+    nav a {
+        color: #ffffff;
+    }
+
     .nav-cta {
         justify-content: center;
     }
