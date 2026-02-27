@@ -298,7 +298,87 @@ nav a:hover::after {
     box-shadow: 0 8px 25px rgba(201, 169, 97, 0.4);
 }
 
-/* ============ About Section ============ */
+/* ============ Index Signature Strip ============ */
+.idx-intro {
+    background: var(--primary);
+    padding: 2.8rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+.menu-intro-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.ornament-line {
+    flex: 0 0 90px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+}
+
+.ornament-icon {
+    color: var(--gold);
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+}
+
+.menu-intro-tagline {
+    font-family: var(--font-serif);
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+    font-style: italic;
+    color: var(--white);
+    letter-spacing: 1px;
+    margin: 0 0 0.6rem 0;
+    line-height: 1.2;
+}
+
+.menu-intro-note {
+    font-size: 0.75rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
+    font-family: var(--font-sans);
+    margin: 0;
+}
+
+/* ============ Section Heading Ornament ============ */
+.section-head {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-head h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 0.9rem;
+}
+
+.section-head h2.light {
+    color: var(--gold);
+}
+
+.section-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section-ornament .ornament-line {
+    flex: 0 0 60px;
+    opacity: 0.4;
+}
+
+.section-ornament .ornament-icon {
+    font-size: 0.75rem;
+}
+
 /* ============ About Section ============ */
 .about {
     background: var(--white);
@@ -322,6 +402,14 @@ nav a:hover::after {
     font-family: var(--font-serif);
     color: var(--primary);
     font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.about-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -336,143 +424,202 @@ nav a:hover::after {
 .highlights {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
     margin-top: 3rem;
 }
 
 .highlight-item {
-    background: linear-gradient(135deg, rgba(201, 169, 97, 0.1) 0%, rgba(212, 165, 116, 0.1) 100%);
-    padding: 2rem;
+    background: var(--primary);
+    padding: 2rem 1.5rem;
     border-radius: 10px;
     text-align: center;
-    border-left: 4px solid var(--gold);
+    border-bottom: 3px solid var(--gold);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(45, 24, 16, 0.18);
 }
 
 .highlight-item h4 {
-    color: var(--primary);
-    font-size: 1.5rem;
+    color: var(--gold);
+    font-size: 1.3rem;
+    font-family: var(--font-serif);
     margin-bottom: 0.5rem;
 }
 
 .highlight-item p {
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.7);
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
 }
 /* ============ Services Section ============ */
 .services {
-    background: var(--white);
+    background: var(--primary);
     padding: 5rem 0;
     margin: 3rem 0;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
 }
 
 .services h2 {
     text-align: center;
-    color: var(--primary);
+    color: var(--gold);
     font-family: var(--font-serif);
     font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.services-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     margin-bottom: 3rem;
+}
+
+.services-ornament .ornament-line {
+    background: var(--gold);
+}
+
+.services-ornament .ornament-icon {
+    color: var(--gold);
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 1.5rem;
+    margin-top: 0;
 }
 
 .service {
-    background: var(--light-bg);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(201, 169, 97, 0.18);
+    border-bottom: 3px solid transparent;
     border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     padding: 2.5rem;
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .service:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 24px rgba(201, 169, 97, 0.15);
+    transform: translateY(-6px);
+    border-bottom-color: var(--gold);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
 
 .service-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .service h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
     font-family: var(--font-serif);
 }
 
 .service p {
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.65);
     line-height: 1.7;
+    font-size: 0.95rem;
 }
 
 /* ============ Ambiance Section ============ */
 .ambiance {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: var(--white);
-    padding: 5rem 0;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    margin: 3rem 0;
-}
-
-.ambiance h2 {
-    font-family: var(--font-serif);
-    color: var(--gold);
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.ambiance-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.ambiance-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
-}
-
-.ambiance-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--accent);
-}
-
-.ambiance-item p {
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.8;
-}
-
-/* ============ Contact Section ============ */
-.contact {
     background: var(--white);
+    color: var(--text-dark);
     padding: 5rem 0;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
     margin: 3rem 0;
 }
 
-.contact h2 {
+.ambiance h2 {
     font-family: var(--font-serif);
     color: var(--primary);
     font-size: 2.5rem;
     text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.ambiance-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     margin-bottom: 3rem;
+}
+
+.ambiance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.ambiance-item {
+    background: var(--primary);
+    padding: 2.2rem;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--gold);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ambiance-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(45, 24, 16, 0.2);
+}
+
+.ambiance-item h3 {
+    font-size: 1.3rem;
+    font-family: var(--font-serif);
+    margin-bottom: 0.75rem;
+    color: var(--gold);
+}
+
+.ambiance-item p {
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* ============ Contact Section ============ */
+.contact {
+    background: var(--primary);
+    padding: 5rem 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    margin: 3rem 0;
+}
+
+.contact h2 {
+    font-family: var(--font-serif);
+    color: var(--gold);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.contact-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.contact-ornament .ornament-line {
+    background: var(--gold);
+}
+
+.contact-ornament .ornament-icon {
+    color: var(--gold);
 }
 
 .contact-wrapper {
@@ -494,33 +641,34 @@ nav a:hover::after {
 }
 
 .info-block {
-    background: linear-gradient(135deg, rgba(201, 169, 97, 0.1) 0%, rgba(212, 165, 116, 0.1) 100%);
+    background: rgba(255, 255, 255, 0.06);
     padding: 2rem;
     border-radius: 10px;
-    border-left: 4px solid var(--gold);
+    border-bottom: 3px solid var(--gold);
+    border-left: none;
 }
 
 .info-block h3 {
-    color: var(--primary);
+    color: var(--gold);
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: var(--font-serif);
 }
 
 .info-block p {
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.7);
     line-height: 1.8;
     font-size: 0.95rem;
 }
 
 .info-block a {
-    color: var(--gold);
+    color: var(--accent);
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .info-block a:hover {
-    color: var(--accent);
+    color: var(--gold);
 }
 
 /* ============ Map Section ============ */
@@ -549,8 +697,8 @@ nav a:hover::after {
 
 .map-note {
     text-align: center;
-    color: var(--text-light);
-    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.88rem;
     font-style: italic;
 }
 

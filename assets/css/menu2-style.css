@@ -77,59 +77,101 @@
     font-size: 1.2rem;
 }
 
-/* ============ Menu Intro ============ */
+/* ============ Menu Intro (Signature Strip) ============ */
 .menu-intro {
-    background: var(--white);
-    padding: 3rem 0;
+    background: var(--primary);
+    padding: 2.8rem 0;
     text-align: center;
-    margin: 0 0 2rem 0;
+    margin: 0;
 }
 
-.menu-intro p {
-    color: var(--text-light);
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.8;
+.menu-intro-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
 }
 
-.price-note {
-    background: linear-gradient(135deg, rgba(201, 169, 97, 0.1) 0%, rgba(212, 165, 116, 0.1) 100%);
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    margin-top: 1rem;
-    color: var(--text-dark);
-    font-weight: 500;
-    display: inline-block;
+.ornament-line {
+    flex: 0 0 90px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+}
+
+.ornament-icon {
+    color: var(--gold);
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+}
+
+.menu-intro-tagline {
+    font-family: var(--font-serif);
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+    font-style: italic;
+    color: var(--white);
+    letter-spacing: 1px;
+    margin: 0 0 0.6rem 0;
+    line-height: 1.2;
+}
+
+.menu-intro-note {
+    font-size: 0.75rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
+    font-family: var(--font-sans);
+    margin: 0;
 }
 
 /* ============ Menu Filters ============ */
 .menu-filters {
-    background: var(--white);
-    padding: 1rem 0;
-    margin: 0 0 2rem 0;
+    background: var(--primary);
+    padding: 0;
+    margin: 0 0 2.5rem 0;
     position: sticky;
     top: 70px;
     z-index: 50;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
     overflow-x: auto;
 }
 
 .menu-filters .container {
     display: flex;
-    justify-content: flex-start;
+    align-items: stretch;
     flex-wrap: nowrap;
-    gap: 0.5rem;
+    gap: 0;
     overflow-x: auto;
     padding: 0 1rem;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
 
+.filter-label {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    white-space: nowrap;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 0.5rem;
+}
+
+.filter-divider {
+    width: 1px;
+    background: rgba(255,255,255,0.12);
+    margin: 0.6rem 0.5rem;
+    flex-shrink: 0;
+}
+
 /* Scrollbar styling for Chrome */
 .menu-filters .container::-webkit-scrollbar {
-    height: 4px;
+    height: 3px;
 }
 
 .menu-filters .container::-webkit-scrollbar-track {
@@ -142,29 +184,31 @@
 }
 
 .filter-btn {
-    background: var(--light-bg);
-    color: var(--text-dark);
-    border: 2px solid transparent;
-    padding: 0.7rem 1.2rem;
-    border-radius: 25px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.55);
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 1rem 1.1rem;
     font-family: var(--font-sans);
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
+    transition: color 0.25s ease, border-color 0.25s ease;
+    font-size: 0.82rem;
+    letter-spacing: 0.5px;
     white-space: nowrap;
     flex-shrink: 0;
+    position: relative;
 }
 
 .filter-btn:hover {
-    border-color: var(--gold);
-    color: var(--gold);
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(201, 169, 97, 0.4);
 }
 
 .filter-btn.active {
-    background: var(--gold);
-    color: var(--primary);
-    border-color: var(--gold);
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+    background: transparent;
 }
 
 /* ============ Menu Content ============ */
@@ -447,7 +491,6 @@
 
     /* HORIZONTAL SCROLLABLE FILTER BAR FOR MOBILE */
     .menu-filters {
-        padding: 0.8rem 0;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
@@ -457,12 +500,12 @@
         flex-wrap: nowrap;
         overflow-x: auto;
         padding: 0 0.5rem;
-        gap: 0.4rem;
+        gap: 0;
     }
 
     .filter-btn {
-        padding: 0.6rem 1rem;
-        font-size: 0.8rem;
+        padding: 0.8rem 0.85rem;
+        font-size: 0.78rem;
         white-space: nowrap;
         flex-shrink: 0;
     }
@@ -529,9 +572,8 @@
     }
 
     .filter-btn {
-        padding: 0.5rem 0.9rem;
-        font-size: 0.75rem;
-        border-radius: 20px;
+        padding: 0.75rem 0.75rem;
+        font-size: 0.72rem;
         white-space: nowrap;
         flex-shrink: 0;
         scroll-snap-align: start;
@@ -604,13 +646,13 @@
     }
 
     .menu-filters .container {
-        gap: 0.25rem;
+        gap: 0;
         padding: 0 0.25rem;
     }
 
     .filter-btn {
-        padding: 0.4rem 0.7rem;
-        font-size: 0.7rem;
+        padding: 0.7rem 0.6rem;
+        font-size: 0.68rem;
     }
 }
 
