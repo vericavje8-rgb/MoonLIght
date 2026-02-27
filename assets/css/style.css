@@ -530,6 +530,228 @@ nav a:hover::after {
     font-size: 0.95rem;
 }
 
+/* ===== CATEGORY STRIP ===== */
+.cat-strip {
+    background: var(--light-bg);
+    padding: 1.6rem 2.5rem 2rem;
+    border-bottom: 1px solid rgba(45,24,16,0.08);
+}
+.cat-strip-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+}
+.cat-strip-label {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(45,24,16,0.4);
+}
+.cat-strip-more {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.cat-strip-more:hover { color: var(--primary); }
+.cat-strip-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.cat-card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    transition: transform 0.3s ease;
+}
+.cat-card:hover { transform: translateY(-4px); }
+.cat-card-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #e8e0d6;
+}
+.cat-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+.cat-card:hover .cat-card-img img { transform: scale(1.06); }
+.cat-card-name {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 0.02em;
+}
+@media (max-width: 600px) {
+    .cat-strip { padding: 1.2rem 1.2rem 1.6rem; }
+    .cat-strip-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== FOOD SHOWCASE ===== */
+.food-showcase {
+    background: #0e0603;
+    padding-top: 4.5rem;
+}
+.food-showcase-header {
+    text-align: center;
+    padding: 0 2rem 3rem;
+}
+.fsh-label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.7rem;
+}
+.food-showcase-header h2 {
+    font-family: var(--font-serif);
+    font-size: 2.8rem;
+    color: #fff;
+    margin: 0 0 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.fsh-orn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--gold);
+}
+.fsh-orn-line {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.45;
+    display: inline-block;
+}
+.food-showcase-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3px;
+    height: 600px;
+}
+.fsc-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.fsc-featured {
+    grid-row: 1 / 4;
+}
+.fsc-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.fsc-card:hover .fsc-bg {
+    transform: scale(1.07);
+}
+.fsc-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(8,3,1,0.88) 0%, rgba(0,0,0,0.25) 50%, transparent 100%);
+    transition: background 0.5s ease;
+    z-index: 1;
+}
+.fsc-card:hover::after {
+    background: linear-gradient(to top, rgba(45,24,16,0.92) 0%, rgba(45,24,16,0.38) 55%, transparent 100%);
+}
+.fsc-tag {
+    position: absolute;
+    top: 1.1rem;
+    left: 1.2rem;
+    font-family: var(--font-sans);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(201,169,97,0.5);
+    padding: 0.28rem 0.65rem;
+    border-radius: 2px;
+    z-index: 3;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(4px);
+}
+.fsc-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.6rem 1.5rem 1.8rem;
+    z-index: 3;
+    transform: translateY(5px);
+    transition: transform 0.4s ease;
+}
+.fsc-card:hover .fsc-info {
+    transform: translateY(0);
+}
+.fsc-info h3 {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 0.3rem;
+    line-height: 1.2;
+}
+.fsc-featured .fsc-info h3 {
+    font-size: 2.1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+.fsc-info p {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.65);
+    margin: 0;
+    line-height: 1.45;
+    letter-spacing: 0.02em;
+}
+.fsc-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201,169,97,0.45);
+    padding-bottom: 2px;
+    transition: color 0.3s, border-color 0.3s;
+}
+.fsc-link:hover {
+    color: #fff;
+    border-color: rgba(255,255,255,0.6);
+}
+@media (max-width: 768px) {
+    .food-showcase-grid { grid-template-columns: 1fr; grid-template-rows: auto; height: auto; }
+    .fsc-featured { grid-row: auto; height: 320px; }
+    .fsc-featured .fsc-info h3 { font-size: 1.6rem; }
+    .fsc-card { height: 200px; }
+}
+
 /* ============ Ambiance Section ============ */
 .ambiance {
     background: var(--white);
